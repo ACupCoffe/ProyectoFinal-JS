@@ -1,0 +1,385 @@
+{
+  "placas_video": {
+    "Rx 6600": {
+      "asus": {
+        "nombre": "ASUS Radeon RX 6600",
+        "vram": "8GB",
+        "precio": 200,
+        "descripcion": "Potente tarjeta gráfica para juegos con 8GB de memoria GDDR6 y soporte para Ray Tracing para una experiencia visual impresionante",
+        "image": "/recursos/img/productos/gpu/rx6600/asus-gpu.webp"
+      },
+      "gigabyte": {
+        "nombre": "GIGABYTE Radeon RX 6600 Gaming OC",
+        "vram": "8GB",
+        "precio": 200,
+        "descripcion": "Rendimiento excepcional para juegos en resoluciones 1080p, equipada con 8GB de memoria GDDR6 y diseño de triple ventilador"
+      },
+      "msi": {
+        "nombre": "MSI Radeon RX 6600 Gaming X",
+        "vram": "8GB",
+        "precio": 200,
+        "descripcion": "Tarjeta gráfica de alta calidad para jugadores exigentes, con sistema de enfriamiento avanzado y 8GB de VRAM"
+      },
+      "sapphire": {
+        "nombre": "Sapphire Pulse Radeon RX 6600",
+        "vram": "8GB",
+        "precio": 200,
+        "descripcion": "Tarjeta gráfica compacta y potente con diseño elegante y gran rendimiento en juegos de última generación"
+      },
+      "powercolor": {
+        "nombre": "PowerColor Red Devil Radeon RX 6600",
+        "vram": "8GB",
+        "precio": 200,
+        "descripcion": "Tarjeta gráfica para jugadores entusiastas, con overclocking de fábrica y características avanzadas de enfriamiento"
+      },
+      "xfx": {
+        "nombre": "XFX Speedster Radeon RX 6600",
+        "vram": "8GB",
+        "precio": 200,
+        "descripcion": "Tarjeta gráfica diseñada para un rendimiento óptimo en juegos de alta exigencia, con 8GB de VRAM y diseño personalizado"
+      }
+    },
+    "Rx 6600 XT": {
+      "asus": {
+        "nombre": "ASUS Radeon RX 6600 XT ROG Strix",
+        "vram": "8GB",
+        "precio": 200,
+        "descripcion": "Potente tarjeta gráfica para juegos de alta gama, diseñada con el exclusivo sistema de enfriamiento ROG Strix y 8GB de memoria GDDR6 para una experiencia de juego inmersiva"
+      },
+      "msi": {
+        "nombre": "MSI Radeon RX 6600 XT Gaming X",
+        "vram": "8GB",
+        "precio": 200,
+        "descripcion": "Tarjeta gráfica de alta calidad con un rendimiento excepcional en resoluciones 1080p y 1440p, equipada con 8GB de VRAM GDDR6 y tecnología de enfriamiento avanzada"
+      },
+      "gigabyte": {
+        "nombre": "GIGABYTE Radeon RX 6600 XT AORUS Master",
+        "vram": "8GB",
+        "precio": 200,
+        "descripcion": "Tarjeta gráfica de la serie AORUS Master con diseño personalizado y componentes de alta calidad para un rendimiento y estabilidad superiores en juegos exigentes"
+      },
+      "sapphire": {
+        "nombre": "Sapphire Pulse Radeon RX 6600 XT",
+        "vram": "8GB",
+        "precio": 200,
+        "descripcion": "Tarjeta gráfica compacta con diseño elegante y gran eficiencia energética, perfecta para juegos en resoluciones 1080p con 8GB de memoria GDDR6"
+      },
+      "powercolor": {
+        "nombre": "PowerColor Red Devil Radeon RX 6600 XT",
+        "vram": "8GB",
+        "precio": 200,
+        "descripcion": "Tarjeta gráfica diseñada para jugadores entusiastas, con overclocking de fábrica y sistema de enfriamiento avanzado para un rendimiento máximo"
+      },
+      "xfx": {
+        "nombre": "XFX Speedster QICK 308 Radeon RX 6600 XT",
+        "vram": "8GB",
+        "precio": 200,
+        "descripcion": "Tarjeta gráfica con diseño moderno y compacto, ideal para sistemas de factor de forma pequeño (SFF), con 8GB de VRAM GDDR6 y alto rendimiento en juegos"
+      }
+    }
+  },
+  "procesador": {
+    "AMD": {
+      "Ryzen 5 5600X": {
+        "cores": 6,
+        "precio": 300,
+        "descripcion": "Procesador Ryzen 5 de 6 núcleos y 12 hilos con alto rendimiento en aplicaciones y juegos para usuarios exigentes.",
+        "socket": "AM4"
+      },
+      "Ryzen 7 5800X": {
+        "cores": 8,
+        "precio": 400,
+        "descripcion": "Procesador Ryzen 7 de 8 núcleos y 16 hilos diseñado para tareas de alta carga de trabajo y juegos intensivos.",
+        "socket": "AM4"
+      },
+      "Ryzen 9 5900X": {
+        "cores": 12,
+        "precio": 600,
+        "descripcion": "Procesador Ryzen 9 de 12 núcleos y 24 hilos para una potencia excepcional en aplicaciones profesionales y experiencias de juego inigualables.",
+        "socket": "AM4"
+      },
+      "Ryzen 5 5600G": {
+        "cores": 6,
+        "precio": 250,
+        "descripcion": "Procesador Ryzen 5 con gráficos integrados Radeon, ideal para sistemas compactos y aplicaciones multimedia.",
+        "socket": "AM4"
+      },
+      "Ryzen 7 5700G": {
+        "cores": 8,
+        "precio": 350,
+        "descripcion": "Procesador Ryzen 7 con gráficos Radeon para una experiencia de juego sin problemas y rendimiento en aplicaciones multitarea.",
+        "socket": "AM4"
+      }
+    },
+    "Intel": {
+      "Core i5-10600K": {
+        "cores": 6,
+        "precio": 250,
+        "descripcion": "Procesador de 10a generación desbloqueado para overclocking, con 6 núcleos y 12 hilos para un rendimiento excepcional en juegos y tareas intensivas.",
+        "socket": "LGA1200"
+      },
+      "Core i7-10700K": {
+        "cores": 8,
+        "precio": 350,
+        "descripcion": "Procesador de 10a generación desbloqueado con 8 núcleos y 16 hilos para un rendimiento potente en juegos y aplicaciones con alta carga de trabajo.",
+        "socket": "LGA1200"
+      },
+      "Core i9-10900K": {
+        "cores": 10,
+        "precio": 500,
+        "descripcion": "Procesador de 10a generación desbloqueado con 10 núcleos y 20 hilos, ideal para juegos y tareas de edición y renderizado intensivas.",
+        "socket": "LGA1200"
+      },
+      "Core i5-11600K": {
+        "cores": 6,
+        "precio": 280,
+        "descripcion": "Procesador de 11a generación desbloqueado con 6 núcleos y 12 hilos, perfecto para jugadores y creadores de contenido.",
+        "socket": "LGA1200"
+      },
+      "Core i7-11700K": {
+        "cores": 8,
+        "precio": 400,
+        "descripcion": "Procesador de 11a generación desbloqueado con 8 núcleos y 16 hilos para un rendimiento excepcional en tareas exigentes.",
+        "socket": "LGA1200"
+      }
+    }
+  },
+  "fuente_alimentacion": {
+    "CX500": {
+      "watts": 500,
+      "certificacion80Plus": "Bronze",
+      "marca": "Corsair",
+      "precio": 80,
+      "descripcion": "Fuente de alimentación de 500W con certificación 80 Plus Bronze para una eficiencia energética sólida."
+    },
+    "SuperNOVA 600 G3": {
+      "watts": 600,
+      "certificacion80Plus": "Gold",
+      "marca": "EVGA",
+      "precio": 100,
+      "descripcion": "Fuente de alimentación de 600W con certificación 80 Plus Gold para una eficiencia y rendimiento superiores."
+    },
+    "Focus GX-750": {
+      "watts": 750,
+      "certificacion80Plus": "Platinum",
+      "marca": "Seasonic",
+      "precio": 150,
+      "descripcion": "Fuente de alimentación de 750W con certificación 80 Plus Platinum para una eficiencia excepcional y baja generación de calor."
+    },
+    "Toughpower GF850W": {
+      "watts": 850,
+      "certificacion80Plus": "Gold",
+      "marca": "Thermaltake",
+      "precio": 180,
+      "descripcion": "Fuente de alimentación de 850W con certificación 80 Plus Gold y diseño modular para una fácil instalación."
+    },
+    "E850": {
+      "watts": 1000,
+      "certificacion80Plus": "Titanium",
+      "marca": "NZXT",
+      "precio": 250,
+      "descripcion": "Fuente de alimentación de 1000W con certificación 80 Plus Titanium y control digital para una máxima eficiencia y rendimiento."
+    },
+    "MWE Bronze 600": {
+      "watts": 600,
+      "certificacion80Plus": "Bronze",
+      "marca": "Cooler Master",
+      "precio": 90,
+      "descripcion": "Fuente de alimentación de 600W con certificación 80 Plus Bronze para una eficiencia confiable y rendimiento sólido."
+    },
+    "Earthwatts Gold Pr700W": {
+      "watts": 700,
+      "certificacion80Plus": "Silver",
+      "marca": "Antec",
+      "precio": 120,
+      "descripcion": "Fuente de alimentación de 700W con certificación 80 Plus Silver y diseño semi-modular para un flujo de aire óptimo."
+    },
+    "Straight Power 11": {
+      "watts": 850,
+      "certificacion80Plus": "Gold",
+      "marca": "be quiet!",
+      "precio": 200,
+      "descripcion": "Fuente de alimentación de 850W con certificación 80 Plus Gold y tecnología Silent Wings para un funcionamiento silencioso."
+    },
+    "SuperNOVA 1000 P2": {
+      "watts": 1000,
+      "certificacion80Plus": "Platinum",
+      "marca": "EVGA",
+      "precio": 280,
+      "descripcion": "Fuente de alimentación de 1000W con certificación 80 Plus Platinum y modo Eco para una mayor eficiencia energética."
+    },
+    "HX1200i": {
+      "watts": 1200,
+      "certificacion80Plus": "Titanium",
+      "marca": "Corsair",
+      "precio": 350,
+      "descripcion": "Fuente de alimentación de 1200W con certificación 80 Plus Titanium y monitoreo digital para un control preciso."
+    }
+  },
+  "ram": {
+    "DDR4": {
+      "Vengeance LPX": {
+        "capacidad": "16GB",
+        "velocidad": "3200MHz",
+        "precio": 100,
+        "descripcion": "Kit de memoria RAM DDR4 de 16GB (2 x 8GB) con disipador de calor para un rendimiento fiable en aplicaciones y juegos."
+      },
+      "Ripjaws V": {
+        "capacidad": "32GB",
+        "velocidad": "3600MHz",
+        "precio": 150,
+        "descripcion": "Kit de memoria RAM DDR4 de 32GB (2 x 16GB) con disipador de calor y perfil XMP 2.0 para overclocking."
+      },
+      "HyperX Fury": {
+        "capacidad": "8GB",
+        "velocidad": "2666MHz",
+        "precio": 80,
+        "descripcion": "Módulo de memoria RAM DDR4 de 8GB con perfil de bajo perfil y disipador de calor para una mayor estabilidad."
+      },
+      "Ballistix RGB": {
+        "capacidad": "64GB",
+        "velocidad": "3600MHz",
+        "precio": 250,
+        "descripcion": "Kit de memoria RAM DDR4 de 64GB (4 x 16GB) con iluminación RGB y perfiles XMP para overclocking avanzado."
+      },
+      "XPG Spectrix D60G": {
+        "capacidad": "32GB",
+        "velocidad": "3200MHz",
+        "precio": 120,
+        "descripcion": "Kit de memoria RAM DDR4 de 32GB (2 x 16GB) con efectos de iluminación RGB y disipador de calor."
+      }
+    },
+    "DDR5": {
+      "Vengeance RGB Pro": {
+        "capacidad": "16GB",
+        "velocidad": "5200MHz",
+        "precio": 200,
+        "descripcion": "Kit de memoria RAM DDR5 de 16GB (2 x 8GB) con iluminación RGB y velocidad ultrarrápida para un rendimiento excepcional."
+      },
+      "Trident Z": {
+        "capacidad": "64GB",
+        "velocidad": "6000MHz",
+        "precio": 350,
+        "descripcion": "Kit de memoria RAM DDR5 de 64GB (2 x 32GB) con disipador de calor y diseño optimizado para overclocking extremo."
+      },
+      "Fury Renegade": {
+        "capacidad": "32GB",
+        "velocidad": "5400MHz",
+        "precio": 280,
+        "descripcion": "Kit de memoria RAM DDR5 de 32GB (2 x 16GB) con disipador de calor de alto rendimiento para una refrigeración efectiva."
+      },
+      "Ballistix Max": {
+        "capacidad": "128GB",
+        "velocidad": "6400MHz",
+        "precio": 500,
+        "descripcion": "Kit de memoria RAM DDR5 de 128GB (4 x 32GB) con disipador de calor de aluminio para un rendimiento sin concesiones."
+      },
+      "XPG Hunter": {
+        "capacidad": "16GB",
+        "velocidad": "4800MHz",
+        "precio": 180,
+        "descripcion": "Kit de memoria RAM DDR5 de 16GB (2 x 8GB) con diseño de disipador de calor y soporte para overclocking."
+      }
+    }
+  },
+  "motherboard": {
+    "AMD": {
+      "ROG Strix B450-F Gaming": {
+        "socket": "AM4",
+        "chipset": "B450",
+        "precio": 150,
+        "descripcion": "Tarjeta madre AMD AM4 para gamers con diseño ROG Strix, soporte para Ryzen de 2da y 3ra generación y tecnología de enfriamiento avanzada."
+      },
+      "MPG X570 Gaming Plus": {
+        "socket": "AM4",
+        "chipset": "X570",
+        "precio": 180,
+        "descripcion": "Tarjeta madre AMD AM4 con chipset X570 para soporte PCIe 4.0, diseño de disipador Frozr y compatibilidad con Ryzen de 2da y 3ra generación."
+      },
+      "B550 AORUS Pro AC": {
+        "socket": "AM4",
+        "chipset": "B550",
+        "precio": 160,
+        "descripcion": "Tarjeta madre AMD AM4 con chipset B550, soporte para Ryzen de 3ra generación, conectividad WiFi 6 y diseño robusto."
+      },
+      "X570 Taichi": {
+        "socket": "AM4",
+        "chipset": "X570",
+        "precio": 250,
+        "descripcion": "Tarjeta madre AMD AM4 con chipset X570, diseño Taichi de alta calidad, soporte PCIe 4.0 y audio de alta definición."
+      },
+      "B450 Tomahawk MAX": {
+        "socket": "AM4",
+        "chipset": "B450",
+        "precio": 120,
+        "descripcion": "Tarjeta madre AMD AM4 con diseño militar de grado extendido, soporte para Ryzen de 2da y 3ra generación y Audio Boost."
+      }
+    },
+    "Intel": {
+      "ROG Maximus XII Hero": {
+        "socket": "LGA1200",
+        "chipset": "Z490",
+        "precio": 350,
+        "descripcion": "Tarjeta madre Intel LGA1200 con chipset Z490, diseño ROG Maximus y soporte para procesadores Intel Core de 10a generación."
+      },
+      "MSI MPG Z590 Gaming Edge": {
+        "socket": "LGA1200",
+        "chipset": "Z590",
+        "precio": 250,
+        "descripcion": "Tarjeta madre Intel LGA1200 con chipset Z590, diseño Gaming Edge y soporte para procesadores Intel Core de 10a y 11a generación."
+      },
+      "Gigabyte Z490 AORUS Elite AC": {
+        "socket": "LGA1200",
+        "chipset": "Z490",
+        "precio": 220,
+        "descripcion": "Tarjeta madre Intel LGA1200 con chipset Z490, soporte para procesadores Intel Core de 10a generación y conectividad WiFi 6."
+      },
+      "ASRock Z590 Phantom Gaming 4": {
+        "socket": "LGA1200",
+        "chipset": "Z590",
+        "precio": 180,
+        "descripcion": "Tarjeta madre Intel LGA1200 con chipset Z590, diseño Phantom Gaming y soporte para procesadores Intel Core de 10a y 11a generación."
+      },
+      "MSI MAG B460M Mortar": {
+        "socket": "LGA1200",
+        "chipset": "B460",
+        "precio": 130,
+        "descripcion": "Tarjeta madre Intel LGA1200 con chipset B460, diseño MAG Mortar y soporte para procesadores Intel Core de 10a y 11a generación."
+      }
+    }
+  },
+  "gabinetes": {
+    "marcas": {
+      "Corsair": {
+        "formato": "ATX",
+        "modelo": "Carbide Series 275R",
+        "precio": 80,
+        "descripcion": "Gabinete ATX de alta calidad con panel lateral de vidrio templado y excelente gestión de cables."
+      },
+      "NZXT": {
+        "formato": "MicroATX",
+        "modelo": "H210",
+        "precio": 90,
+        "descripcion": "Gabinete compacto MicroATX con diseño elegante y panel frontal de vidrio templado."
+      },
+      "Cooler Master": {
+        "formato": "MiniITX",
+        "modelo": "MasterBox NR200P",
+        "precio": 100,
+        "descripcion": "Gabinete MiniITX compacto con diseño modular y excelente capacidad de enfriamiento."
+      },
+      "Phanteks": {
+        "formato": "EATX",
+        "modelo": "Enthoo Pro 2",
+        "precio": 150,
+        "descripcion": "Gabinete EATX de alto rendimiento con múltiples opciones de almacenamiento y refrigeración líquida."
+      },
+      "Fractal Design": {
+        "formato": "FlexATX",
+        "modelo": "Node 304",
+        "precio": 110,
+        "descripcion": "Gabinete FlexATX compacto y versátil, ideal para sistemas de factor de forma pequeño (SFF)."
+      }
+    }
+  }
+}
