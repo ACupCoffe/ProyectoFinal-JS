@@ -46,8 +46,6 @@ function card_creator(producto, where) {
   contenido_boton.classList.add("boton");
   contenido_boton.innerText = "AGREGAR AL CARRITO";
   tarjeta_contenedor.appendChild(contenido_boton);
-
-  console.log(producto);
 } // Producto = Objeto que anadir a la tarjeta ----- where = ID donde debe ir
 
 card_creator(gpu.Rx_6600.asus, "rx6600_asus");

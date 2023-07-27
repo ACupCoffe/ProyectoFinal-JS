@@ -2,7 +2,7 @@ export const gpu = {
   Rx_6600: {
     asus: {
       nombre: "ASUS Radeon RX 6600",
-      imagen: "/recursos/img/productos/gpu/rx6600/asus-gpu.webp",
+      imagen: "../recursos/img/productos/gpu/rx6600/asus-gpu.webp",
       vram: "8GB",
       precio: 200,
       descripcion:
@@ -161,28 +161,28 @@ export const cpu = {
         "Procesador de 10a generación desbloqueado para overclocking, con 6 núcleos y 12 hilos para un rendimiento excepcional en juegos y tareas intensivas.",
       socket: "LGA1200",
     },
-    "Core i7-10700K": {
+    intel_10700k: {
       cores: 8,
       precio: 350,
       descripcion:
         "Procesador de 10a generación desbloqueado con 8 núcleos y 16 hilos para un rendimiento potente en juegos y aplicaciones con alta carga de trabajo.",
       socket: "LGA1200",
     },
-    "Core i9-10900K": {
+    intel_10900k: {
       cores: 10,
       precio: 500,
       descripcion:
         "Procesador de 10a generación desbloqueado con 10 núcleos y 20 hilos, ideal para juegos y tareas de edición y renderizado intensivas.",
       socket: "LGA1200",
     },
-    "Core i5-11600K": {
+    intel_11600k: {
       cores: 6,
       precio: 280,
       descripcion:
         "Procesador de 11a generación desbloqueado con 6 núcleos y 12 hilos, perfecto para jugadores y creadores de contenido.",
       socket: "LGA1200",
     },
-    "Core i7-11700K": {
+    intel_11700k: {
       cores: 8,
       precio: 400,
       descripcion:
