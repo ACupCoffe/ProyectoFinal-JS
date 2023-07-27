@@ -2,7 +2,7 @@ export const gpu = {
   Rx_6600: {
     asus: {
       nombre: "ASUS Radeon RX 6600",
-      image: "/recursos/img/productos/gpu/rx6600/asus-gpu.webp",
+      imagen: "/recursos/img/productos/gpu/rx6600/asus-gpu.webp",
       vram: "8GB",
       precio: 200,
       descripcion:
@@ -10,7 +10,7 @@ export const gpu = {
     },
     gigabyte: {
       nombre: "GIGABYTE Radeon RX 6600 Gaming OC",
-      image: "/recursos/img/productos/gpu/rx6600/gigabyte-gpu.webp",
+      imagen: "/recursos/img/productos/gpu/rx6600/gigabyte-gpu.webp",
       vram: "8GB",
       precio: 200,
       descripcion:
@@ -18,7 +18,7 @@ export const gpu = {
     },
     msi: {
       nombre: "MSI Radeon RX 6600 Gaming X",
-      image: "/recursos/img/productos/gpu/rx6600/msi-gpu-transformed.webp",
+      imagen: "/recursos/img/productos/gpu/rx6600/msi-gpu-transformed.webp",
       vram: "8GB",
       precio: 200,
       descripcion:
@@ -105,35 +105,45 @@ export const gpu = {
 
 export const cpu = {
   AMD: {
-    "Ryzen 5 5600X": {
+    ryzen_5600x: {
+      nombre: "Ryzen 5 5600x",
+      imagen: "/recursos/img/productos/cpu/amd/ryzen_5_5600x.png",
       cores: 6,
       precio: 300,
       descripcion:
         "Procesador Ryzen 5 de 6 núcleos y 12 hilos con alto rendimiento en aplicaciones y juegos para usuarios exigentes.",
       socket: "AM4",
     },
-    "Ryzen 7 5800X": {
+    ryzen_5800x: {
+      nombre: "Ryzen 7 5800x",
+      imagen: "/recursos/img/productos/cpu/amd/ryzen_7_5800x.png",
       cores: 8,
       precio: 400,
       descripcion:
         "Procesador Ryzen 7 de 8 núcleos y 16 hilos diseñado para tareas de alta carga de trabajo y juegos intensivos.",
       socket: "AM4",
     },
-    "Ryzen 9 5900X": {
+    ryzen_5900x: {
+      nombre: "Ryzen 9 5900x",
+      imagen: "/recursos/img/productos/cpu/amd/ryzen_9_5900x.png",
       cores: 12,
       precio: 600,
       descripcion:
         "Procesador Ryzen 9 de 12 núcleos y 24 hilos para una potencia excepcional en aplicaciones profesionales y experiencias de juego inigualables.",
       socket: "AM4",
     },
-    "Ryzen 5 5600G": {
+    ryzen_5600g: {
+      nombre: "Ryzen 5 5600g",
+      imagen: "/recursos/img/productos/cpu/amd/ryzen_5_5600g.png",
       cores: 6,
       precio: 250,
       descripcion:
         "Procesador Ryzen 5 con gráficos integrados Radeon, ideal para sistemas compactos y aplicaciones multimedia.",
       socket: "AM4",
     },
-    "Ryzen 7 5700G": {
+    ryzen_5700g: {
+      nombre: "Ryzen 7 5700g",
+      imagen: "/recursos/img/productos/cpu/amd/ryzen_7_5700g.png",
       cores: 8,
       precio: 350,
       descripcion:
@@ -142,7 +152,9 @@ export const cpu = {
     },
   },
   Intel: {
-    "Core i5-10600K": {
+    intel_10600k: {
+      nombre: "Intel Core ",
+      imagen: "/recursos/img/productos/cpu/intel",
       cores: 6,
       precio: 250,
       descripcion:

@@ -53,6 +53,7 @@ p {
 }
 
 .boton {
+  margin: auto;
   text-align: center;
   text-decoration: none;
   border-radius: 28px;
@@ -88,9 +89,9 @@ p {
     border: solid #f5f6f6 0.2rem;
     border-radius: 10%;
     background-color: #f5f6f6;
+    height: auto;
 
     img {
-      display: block;
       max-width: 100%;
     }
   }

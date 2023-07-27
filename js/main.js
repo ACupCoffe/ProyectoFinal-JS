@@ -2,54 +2,54 @@ console.log("HolA mundo");
 
 import { gpu, cpu, psu, ram, mother, gabo } from "./productos.js";
 
-// const card_container = document.getElementById("testeo");
-// card_container.classList.add("card--product");
+function card_creator(producto, where) {
+  // CONTORNO DE LA TARJETA
+  const tarjeta_contenedor = document.getElementById(where);
+  tarjeta_contenedor.classList.add("card--product");
 
-// CONTENEDOR IMG
-// const container_img = document.createElement("div");
-// container_img.classList.add("card--product__img");
-// card_container.appendChild(container_img);
-// const imgElement = document.createElement("img");
-// imgElement.setAttribute("src", gpu.Rx_6600.asus.image);
-// container_img.appendChild(imgElement);
+  // CONTENEDOR IMAGEN
+  const contenedor_imagen = document.createElement("div");
+  contenedor_imagen.classList.add("card--product__img");
+  tarjeta_contenedor.appendChild(contenedor_imagen);
 
-// CONTENDOR DESC
-// const container_desc = document.createElement("div");
-// container_desc.classList.add("card--product__txt");
-// card_container.appendChild(container_desc);
-// const descTitle = document.createElement("p");
-// descTitle.classList.add("title_card");
-// descTitle.innerText = gpu["Rx 6600"].asus.nombre;
-// container_desc.appendChild(descTitle);
-// const descPrecio = document.createElement("p");
-// descPrecio.classList.add("precio_card");
-// descPrecio.innerText = "USD $" + gpu["Rx 6600"].asus.precio;
-// container_desc.appendChild(descPrecio);
-// const descCont = document.createElement("p");
-// descCont.classList.add("desc_card");
-// descCont.innerText = gpu["Rx 6600"].asus.descripcion;
-// container_desc.appendChild(descCont);
+  // img
+  const img_elemento = document.createElement("img");
+  img_elemento.classList.add();
+  img_elemento.setAttribute("src", producto.imagen);
+  contenedor_imagen.appendChild(img_elemento);
 
-for (let obj_producto in gpu) {
-  console.log("Modelo: " + obj_producto);
+  // CONTENEDOR TEXTO
+  const contenedor_contenido = document.createElement("div");
+  contenedor_contenido.classList.add("card--product__txt");
+  tarjeta_contenedor.appendChild(contenedor_contenido);
 
-  const datosProducto = gpu[obj_producto];
+  // contenido --- TITULO ---
+  const contenido_title = document.createElement("p");
+  contenido_title.classList.add("title_card");
+  contenido_title.innerText = producto.nombre;
+  contenedor_contenido.appendChild(contenido_title);
 
-  for (let valor in datosProducto) {
-    if (typeof datosProducto[valor] === "object") {
-      console.log(valor + ":");
+  // contenido --- PRECIO ---
+  const contenido_precio = document.createElement("p");
+  contenido_precio.classList.add("precio_card");
+  contenido_precio.innerText = "USD $" + producto.precio;
+  contenedor_contenido.appendChild(contenido_precio);
 
-      const obejetoAnidado = datosProducto[valor];
+  // contenido --- DESC ---
+  const contenido_desc = document.createElement("p");
+  contenido_desc.classList.add("desc_card");
+  contenido_desc.innerText = producto.descripcion;
+  contenedor_contenido.appendChild(contenido_desc);
 
-      for (let clave in obejetoAnidado) {
-        console.log(clave + ": " + obejetoAnidado[clave]);
-      }
-    } else {
-      console.log(valor + ": " + datosProducto[valor]);
-    }
-  }
-}
+  // CONTENEDOR BOTON
+  const contenido_boton = document.createElement("div");
+  contenido_boton.classList.add("boton");
+  contenido_boton.innerText = "AGREGAR AL CARRITO";
+  tarjeta_contenedor.appendChild(contenido_boton);
 
-function card_creator(producto) {
-  const tarjeta_contenedor = document.getElementById("testeo");
-}
+  console.log(producto);
+} // Producto = Objeto que anadir a la tarjeta ----- where = ID donde debe ir
+
+card_creator(gpu.Rx_6600.asus, "rx6600_asus");
+card_creator(gpu.Rx_6600_XT.msi, "rx6600_xt_msi");
+card_creator(gpu.Rx_6600.powercolor, "rx6600_power_color");
