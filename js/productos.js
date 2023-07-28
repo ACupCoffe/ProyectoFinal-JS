@@ -10,7 +10,7 @@ export const gpu = {
     },
     gigabyte: {
       nombre: "GIGABYTE Radeon RX 6600 Gaming OC",
-      imagen: "/recursos/img/productos/gpu/rx6600/gigabyte-gpu.webp",
+      imagen: "./recursos/img/productos/gpu/rx6600/gigabyte-gpu.webp",
       vram: "8GB",
       precio: 200,
       descripcion:
@@ -18,7 +18,7 @@ export const gpu = {
     },
     msi: {
       nombre: "MSI Radeon RX 6600 Gaming X",
-      imagen: "/recursos/img/productos/gpu/rx6600/msi-gpu-transformed.webp",
+      imagen: "./recursos/img/productos/gpu/rx6600/msi-gpu-transformed.webp",
       vram: "8GB",
       precio: 200,
       descripcion:
@@ -27,7 +27,7 @@ export const gpu = {
     sapphire: {
       nombre: "Sapphire Pulse Radeon RX 6600",
       imagen:
-        "/recursos/img/productos/gpu/rx6600/sapphire-gpu-transformed.webp",
+        "./recursos/img/productos/gpu/rx6600/sapphire-gpu-transformed.webp",
       vram: "8GB",
       precio: 200,
       descripcion:
@@ -36,7 +36,7 @@ export const gpu = {
     powercolor: {
       nombre: "PowerColor Red Devil Radeon RX 6600",
       imagen:
-        "/recursos/img/productos/gpu/rx6600/powercolor-removebg-preview.webp",
+        "./recursos/img/productos/gpu/rx6600/powercolor-removebg-preview.webp",
       vram: "8GB",
       precio: 200,
       descripcion:
@@ -44,7 +44,7 @@ export const gpu = {
     },
     xfx: {
       nombre: "XFX Speedster Radeon RX 6600",
-      imagen: "/recursos/img/productos/gpu/rx6600/xfx-gpu.png",
+      imagen: "./recursos/img/productos/gpu/rx6600/xfx-gpu.png",
       vram: "8GB",
       precio: 200,
       descripcion:
@@ -54,7 +54,7 @@ export const gpu = {
   Rx_6600_XT: {
     asus: {
       nombre: "ASUS Radeon RX 6600 XT ROG Strix",
-      imagen: "/recursos/img/productos/gpu/rx6600_xt/asus-gpu.webp",
+      imagen: "./recursos/img/productos/gpu/rx6600_xt/asus-gpu.webp",
       vram: "8GB",
       precio: 200,
       descripcion:
@@ -62,7 +62,7 @@ export const gpu = {
     },
     msi: {
       nombre: "MSI Radeon RX 6600 XT Gaming X",
-      imagen: "/recursos/img/productos/gpu/rx6600_xt/msi-gpu.png",
+      imagen: "./recursos/img/productos/gpu/rx6600_xt/msi-gpu.png",
       vram: "8GB",
       precio: 200,
       descripcion:
@@ -70,7 +70,7 @@ export const gpu = {
     },
     gigabyte: {
       nombre: "GIGABYTE Radeon RX 6600 XT AORUS Master",
-      imagen: "/recursos/img/productos/gpu/rx6600_xt/gigabyte-gpu.webp",
+      imagen: "./recursos/img/productos/gpu/rx6600_xt/gigabyte-gpu.webp",
       vram: "8GB",
       precio: 200,
       descripcion:
@@ -78,7 +78,7 @@ export const gpu = {
     },
     sapphire: {
       nombre: "Sapphire Pulse Radeon RX 6600 XT",
-      imagen: "/recursos/img/productos/gpu/rx6600_xt/sapphire-gpu.png",
+      imagen: "./recursos/img/productos/gpu/rx6600_xt/sapphire-gpu.png",
       vram: "8GB",
       precio: 200,
       descripcion:
@@ -86,7 +86,7 @@ export const gpu = {
     },
     powercolor: {
       nombre: "PowerColor Red Devil Radeon RX 6600 XT",
-      imagen: "/recursos/img/productos/gpu/rx6600_xt/power_color-gpu.png",
+      imagen: "./recursos/img/productos/gpu/rx6600_xt/power_color-gpu.png",
       vram: "8GB",
       precio: 200,
       descripcion:
@@ -94,7 +94,7 @@ export const gpu = {
     },
     xfx: {
       nombre: "XFX Speedster QICK 308 Radeon RX 6600 XT",
-      imagen: "/recursos/img/productos/gpu/rx6600_xt/xfx-gpu.jpg",
+      imagen: "./recursos/img/productos/gpu/rx6600_xt/xfx-gpu.jpg",
       vram: "8GB",
       precio: 200,
       descripcion:
@@ -107,7 +107,7 @@ export const cpu = {
   AMD: {
     ryzen_5600x: {
       nombre: "Ryzen 5 5600x",
-      imagen: "/recursos/img/productos/cpu/amd/ryzen_5_5600x.png",
+      imagen: "./recursos/img/productos/cpu/amd/ryzen_5_5600x.png",
       cores: 6,
       precio: 300,
       descripcion:
@@ -116,7 +116,7 @@ export const cpu = {
     },
     ryzen_5800x: {
       nombre: "Ryzen 7 5800x",
-      imagen: "/recursos/img/productos/cpu/amd/ryzen_7_5800x.png",
+      imagen: "./recursos/img/productos/cpu/amd/ryzen_7_5800x.png",
       cores: 8,
       precio: 400,
       descripcion:
@@ -125,7 +125,7 @@ export const cpu = {
     },
     ryzen_5900x: {
       nombre: "Ryzen 9 5900x",
-      imagen: "/recursos/img/productos/cpu/amd/ryzen_9_5900x.png",
+      imagen: "./recursos/img/productos/cpu/amd/ryzen_9_5900x.png",
       cores: 12,
       precio: 600,
       descripcion:
@@ -134,7 +134,7 @@ export const cpu = {
     },
     ryzen_5600g: {
       nombre: "Ryzen 5 5600g",
-      imagen: "/recursos/img/productos/cpu/amd/ryzen_5_5600g.png",
+      imagen: "./recursos/img/productos/cpu/amd/ryzen_5_5600g.png",
       cores: 6,
       precio: 250,
       descripcion:
@@ -143,7 +143,7 @@ export const cpu = {
     },
     ryzen_5700g: {
       nombre: "Ryzen 7 5700g",
-      imagen: "/recursos/img/productos/cpu/amd/ryzen_7_5700g.png",
+      imagen: "./recursos/img/productos/cpu/amd/ryzen_7_5700g.png",
       cores: 8,
       precio: 350,
       descripcion:
@@ -154,7 +154,7 @@ export const cpu = {
   Intel: {
     intel_10600k: {
       nombre: "Intel Core ",
-      imagen: "/recursos/img/productos/cpu/intel",
+      imagen: "./recursos/img/productos/cpu/intel",
       cores: 6,
       precio: 250,
       descripcion:

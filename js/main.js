@@ -48,6 +48,6 @@ function card_creator(producto, where) {
   tarjeta_contenedor.appendChild(contenido_boton);
 } // Producto = Objeto que anadir a la tarjeta ----- where = ID donde debe ir
 
-card_creator(gpu.Rx_6600.asus, "rx6600_asus");
-card_creator(gpu.Rx_6600_XT.msi, "rx6600_xt_msi");
-card_creator(gpu.Rx_6600.powercolor, "rx6600_power_color");
+card_creator(gpu.Rx_6600.asus, "recomendacion_1");
+card_creator(gpu.Rx_6600_XT.msi, "recomendacion_2");
+card_creator(cpu.AMD.ryzen_5600g, "recomendacion_3");
