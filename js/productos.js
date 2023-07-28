@@ -2,7 +2,7 @@ export const gpu = {
   Rx_6600: {
     asus: {
       nombre: "ASUS Radeon RX 6600",
-      imagen: "../recursos/img/productos/gpu/rx6600/asus-gpu.webp",
+      imagen: "../../../recursos/img/productos/gpu/rx6600/asus-gpu.webp",
       vram: "8GB",
       precio: 200,
       descripcion:
