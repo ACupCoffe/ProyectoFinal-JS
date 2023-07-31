@@ -84,9 +84,11 @@ p {
   border-radius: 10%;
   background-color: #f5f6f6;
   height: auto;
+  text-align: center;
+  margin: auto;
 }
 .card--product .card--product__img img {
-  max-width: 100%;
+  max-width: 60%;
 }
 .card--product .card--product__txt {
   display: grid;
@@ -119,11 +121,12 @@ p {
 }
 .menu-bar .menu-bar_links {
   background-color: white;
-  display: grid;
-  grid-template-columns: repeat(6, auto);
-  align-content: space-evenly;
+  display: flex;
+  justify-content: space-between;
 }
 .menu-bar .menu-bar_links a {
+  margin: auto 0;
+  align-content: center;
   font-weight: 500;
   text-align: center;
   text-decoration: none;
@@ -133,10 +136,25 @@ p {
 .menu-bar .menu-bar_links a:hover {
   color: #014701;
 }
+.menu-bar .menu-bar_links .input_search {
+  display: flex;
+  width: 45%;
+}
+.menu-bar .menu-bar_links .input_search #busqueda {
+  border: solid 1px #f5f6f6;
+  border-radius: 5px;
+  margin: auto 0;
+  background-color: #f5f6f6;
+  width: 100%;
+  padding: 1rem 2.5rem;
+}
+.menu-bar .menu-bar_links .input_search :focus {
+  outline: none;
+}
 
 .contenido1 {
   background-color: #a6d4e6;
-  background-image: url(/recursos/img/banner.png);
+  background-image: url(../recursos/img/index_img/banner.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -186,6 +204,7 @@ p {
   gap: 0 5rem;
 }
 .contenido2 .contenido2_cards a {
+  margin: auto;
   color: white;
   text-align: center;
   font-size: 2.5rem;
@@ -200,23 +219,25 @@ p {
   height: 15rem;
   width: auto;
   border-radius: 2.5%;
+  display: grid;
+  align-content: center;
 }
 .contenido2 .contenido2_cards .gpu {
-  background-image: url(/recursos/img/gpu.png);
+  background-image: url(../recursos/img/index_img/gpu.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0;
 }
 .contenido2 .contenido2_cards .cpu {
-  background-image: url(/recursos/img/cpu.webp);
+  background-image: url(../recursos/img/index_img/cpu.webp);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   margin: 0;
 }
 .contenido2 .contenido2_cards .psu {
-  background-image: url(/recursos/img/psu.jpg);
+  background-image: url(../recursos/img/index_img/psu.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

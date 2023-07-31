@@ -2,6 +2,7 @@ console.log("HolA mundo");
 
 import { gpu, cpu, psu, ram, mother, gabo } from "./productos.js";
 
+//CREACION DE LAS CARD
 function card_creator(producto, where) {
   // CONTORNO DE LA TARJETA
   const tarjeta_contenedor = document.getElementById(where);
@@ -48,6 +49,9 @@ function card_creator(producto, where) {
   tarjeta_contenedor.appendChild(contenido_boton);
 } // Producto = Objeto que anadir a la tarjeta ----- where = ID donde debe ir
 
+// CARD DE TESTEO
 card_creator(gpu.Rx_6600.asus, "recomendacion_1");
-card_creator(gpu.Rx_6600_XT.msi, "recomendacion_2");
+card_creator(cpu.Intel.intel_10600k, "recomendacion_2");
 card_creator(cpu.AMD.ryzen_5600g, "recomendacion_3");
+
+// BARRA DE BUSQUEDA

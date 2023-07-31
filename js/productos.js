@@ -153,15 +153,17 @@ export const cpu = {
   },
   Intel: {
     intel_10600k: {
-      nombre: "Intel Core ",
-      imagen: "./recursos/img/productos/cpu/intel",
+      nombre: "Intel Core Intel Core 10600k",
+      imagen: "./recursos/img/productos/cpu/intel/10600k.png",
       cores: 6,
       precio: 250,
       descripcion:
         "Procesador de 10a generación desbloqueado para overclocking, con 6 núcleos y 12 hilos para un rendimiento excepcional en juegos y tareas intensivas.",
       socket: "LGA1200",
     },
-    intel_10700k: {
+    intel_10700kf: {
+      nombre: "Intel Core I7 10700kf",
+      imagen: "./recursos/img/productos/cpu/intel/10700kf.png",
       cores: 8,
       precio: 350,
       descripcion:
@@ -169,6 +171,8 @@ export const cpu = {
       socket: "LGA1200",
     },
     intel_10900k: {
+      nombre: "Intel Core I9 10900k",
+      imagen: "./recursos/img/productos/cpu/intel/10900k.png",
       cores: 10,
       precio: 500,
       descripcion:
@@ -176,6 +180,8 @@ export const cpu = {
       socket: "LGA1200",
     },
     intel_11600k: {
+      nombre: "Intel Core I5 11600k",
+      imagen: "./recursos/img/productos/cpu/intel/11600k.png",
       cores: 6,
       precio: 280,
       descripcion:
@@ -183,6 +189,8 @@ export const cpu = {
       socket: "LGA1200",
     },
     intel_11700k: {
+      nombre: "Intel Core I7 11700k",
+      imagen: "./recursos/img/productos/cpu/intel/11700k.png",
       cores: 8,
       precio: 400,
       descripcion:
@@ -193,31 +201,39 @@ export const cpu = {
 };
 
 export const psu = {
-  CX500: {
-    watts: 500,
+  CX550: {
+    nombre: "Corsair CX550 , Bronze 550w",
+    imagen: "./recursos/img/productos/psu/cx_550.png",
+    watts: 550,
     certificacion80Plus: "Bronze",
     marca: "Corsair",
     precio: 80,
     descripcion:
-      "Fuente de alimentación de 500W con certificación 80 Plus Bronze para una eficiencia energética sólida.",
+      "Fuente de alimentación de 550W con certificación 80 Plus Bronze para una eficiencia energética sólida.",
   },
-  "SuperNOVA 600 G3": {
-    watts: 600,
+  SuperNOVA_650: {
+    nombre: "EVGA SuperNOVA 650 GM, 80 Plus Gold 650W",
+    imagen: "./recursos/img/productos/psu/super_nova_650.png",
+    watts: 650,
     certificacion80Plus: "Gold",
     marca: "EVGA",
     precio: 100,
     descripcion:
       "Fuente de alimentación de 600W con certificación 80 Plus Gold para una eficiencia y rendimiento superiores.",
   },
-  "Focus GX-750": {
-    watts: 750,
-    certificacion80Plus: "Platinum",
+  GX_850: {
+    nombre: "Seasonic Focus GX-850, 850 W 80+ Gold",
+    imagen: "./recursos/img/productos/psu/gx_850.png",
+    watts: 850,
+    certificacion80Plus: "Gold",
     marca: "Seasonic",
     precio: 150,
     descripcion:
-      "Fuente de alimentación de 750W con certificación 80 Plus Platinum para una eficiencia excepcional y baja generación de calor.",
+      "Fuente de alimentación de 750W con certificación 80 Plus Gold para una eficiencia excepcional y baja generación de calor.",
   },
-  "Toughpower GF850W": {
+  GF850W: {
+    nombre: "Thermaltake Toughpower GF A3 850W",
+    imagen: "./recursos/img/productos/psu/thermaltake_850.png",
     watts: 850,
     certificacion80Plus: "Gold",
     marca: "Thermaltake",
@@ -226,86 +242,68 @@ export const psu = {
       "Fuente de alimentación de 850W con certificación 80 Plus Gold y diseño modular para una fácil instalación.",
   },
   E850: {
-    watts: 1000,
-    certificacion80Plus: "Titanium",
+    nombre: "E850 Gold",
+    imagen: "./recursos/img/productos/psu/e850.png",
+    watts: 850,
+    certificacion80Plus: "Gold",
     marca: "NZXT",
     precio: 250,
     descripcion:
-      "Fuente de alimentación de 1000W con certificación 80 Plus Titanium y control digital para una máxima eficiencia y rendimiento.",
+      "Fuente de alimentación de 850W con certificación 80 Plus Titanium y control digital para una máxima eficiencia y rendimiento.",
   },
-  "MWE Bronze 600": {
-    watts: 600,
-    certificacion80Plus: "Bronze",
+  mwe650: {
+    nombre: "Cooler Master MWE 650w Gold",
+    imagen: "./recursos/img/productos/psu/mwe_650.png",
+    watts: 650,
+    certificacion80Plus: "Gold",
     marca: "Cooler Master",
     precio: 90,
     descripcion:
-      "Fuente de alimentación de 600W con certificación 80 Plus Bronze para una eficiencia confiable y rendimiento sólido.",
-  },
-  "Earthwatts Gold Pr700W": {
-    watts: 700,
-    certificacion80Plus: "Silver",
-    marca: "Antec",
-    precio: 120,
-    descripcion:
-      "Fuente de alimentación de 700W con certificación 80 Plus Silver y diseño semi-modular para un flujo de aire óptimo.",
-  },
-  "Straight Power 11": {
-    watts: 850,
-    certificacion80Plus: "Gold",
-    marca: "be quiet!",
-    precio: 200,
-    descripcion:
-      "Fuente de alimentación de 850W con certificación 80 Plus Gold y tecnología Silent Wings para un funcionamiento silencioso.",
-  },
-  "SuperNOVA 1000 P2": {
-    watts: 1000,
-    certificacion80Plus: "Platinum",
-    marca: "EVGA",
-    precio: 280,
-    descripcion:
-      "Fuente de alimentación de 1000W con certificación 80 Plus Platinum y modo Eco para una mayor eficiencia energética.",
-  },
-  HX1200i: {
-    watts: 1200,
-    certificacion80Plus: "Titanium",
-    marca: "Corsair",
-    precio: 350,
-    descripcion:
-      "Fuente de alimentación de 1200W con certificación 80 Plus Titanium y monitoreo digital para un control preciso.",
+      "Fuente de alimentación de 600W con certificación 80 Plus Gold para una eficiencia confiable y rendimiento sólido.",
   },
 };
 
 export const ram = {
   DDR4: {
-    "Vengeance LPX": {
+    vengance_lpx: {
+      nombre: "Vengeance LPX",
+      cantidad: 2,
       capacidad: "16GB",
       velocidad: "3200MHz",
       precio: 100,
       descripcion:
         "Kit de memoria RAM DDR4 de 16GB (2 x 8GB) con disipador de calor para un rendimiento fiable en aplicaciones y juegos.",
     },
-    "Ripjaws V": {
+    ripjaws_v: {
+      nombre: "Ripjaws V",
+      cantidad: 2,
       capacidad: "32GB",
       velocidad: "3600MHz",
       precio: 150,
       descripcion:
         "Kit de memoria RAM DDR4 de 32GB (2 x 16GB) con disipador de calor y perfil XMP 2.0 para overclocking.",
     },
-    "HyperX Fury": {
+    hyperx_furey: {
+      nombre: "HyperX Fury",
+      cantidad: 1,
       capacidad: "8GB",
       velocidad: "2666MHz",
       precio: 80,
       descripcion:
         "Módulo de memoria RAM DDR4 de 8GB con perfil de bajo perfil y disipador de calor para una mayor estabilidad.",
     },
-    "Ballistix RGB": {
+    ballisix_rgb: {
+      nombre: "Ballistix RGB",
+      cantidad: 4,
       capacidad: "64GB",
       velocidad: "3600MHz",
       precio: 250,
       descripcion:
         "Kit de memoria RAM DDR4 de 64GB (4 x 16GB) con iluminación RGB y perfiles XMP para overclocking avanzado.",
     },
-    "XPG Spectrix D60G": {
+    xpg_spectrix: {
+      nombre: "XPG Spectrix D60G",
+      cantidad: 2,
       capacidad: "32GB",
       velocidad: "3200MHz",
       precio: 120,
@@ -314,35 +312,45 @@ export const ram = {
     },
   },
   DDR5: {
-    "Vengeance RGB Pro": {
+    vengance_pro_rgb: {
+      nombre: "Vengeance RGB Pro",
+      cantidad: 2,
       capacidad: "16GB",
       velocidad: "5200MHz",
       precio: 200,
       descripcion:
         "Kit de memoria RAM DDR5 de 16GB (2 x 8GB) con iluminación RGB y velocidad ultrarrápida para un rendimiento excepcional.",
     },
-    "Trident Z": {
+    trident_z: {
+      nombre: "Trident Z",
+      caantidad: 2,
       capacidad: "64GB",
       velocidad: "6000MHz",
       precio: 350,
       descripcion:
         "Kit de memoria RAM DDR5 de 64GB (2 x 32GB) con disipador de calor y diseño optimizado para overclocking extremo.",
     },
-    "Fury Renegade": {
+    fury_renegade: {
+      nombre: "Fury Renegade",
+      cantidad: 2,
       capacidad: "32GB",
       velocidad: "5400MHz",
       precio: 280,
       descripcion:
         "Kit de memoria RAM DDR5 de 32GB (2 x 16GB) con disipador de calor de alto rendimiento para una refrigeración efectiva.",
     },
-    "Ballistix Max": {
+    crucial_ballistix: {
+      nombre: "Ballistix Max",
+      cantidad: 4,
       capacidad: "128GB",
       velocidad: "6400MHz",
       precio: 500,
       descripcion:
         "Kit de memoria RAM DDR5 de 128GB (4 x 32GB) con disipador de calor de aluminio para un rendimiento sin concesiones.",
     },
-    "XPG Hunter": {
+    xpg_hunter: {
+      nombre: "XPG Hunter",
+      cantidad: 2,
       capacidad: "16GB",
       velocidad: "4800MHz",
       precio: 180,
@@ -354,35 +362,45 @@ export const ram = {
 
 export const mother = {
   AMD: {
-    "ROG Strix B450-F Gaming": {
+    rog_trix_b450: {
+      nombre: "ROG Strix B450-F Gaming",
+      imagen: "./recursos/img/productos/mother/rog_stric_b450.png",
       socket: "AM4",
       chipset: "B450",
       precio: 150,
       descripcion:
         "Tarjeta madre AMD AM4 para gamers con diseño ROG Strix, soporte para Ryzen de 2da y 3ra generación y tecnología de enfriamiento avanzada.",
     },
-    "MPG X570 Gaming Plus": {
+    mpg_x570: {
+      nombre: "MPG X570 Gaming Plus",
+      imagen: "./recursos/img/productos/mother/msi_mpg_x570.png",
       socket: "AM4",
       chipset: "X570",
       precio: 180,
       descripcion:
         "Tarjeta madre AMD AM4 con chipset X570 para soporte PCIe 4.0, diseño de disipador Frozr y compatibilidad con Ryzen de 2da y 3ra generación.",
     },
-    "B550 AORUS Pro AC": {
+    aorus_b550: {
+      nombre: "B550 AORUS Pro AC",
+      imagen: "./recursos/img/productos/mother/asus_prime_b550.png",
       socket: "AM4",
       chipset: "B550",
       precio: 160,
       descripcion:
         "Tarjeta madre AMD AM4 con chipset B550, soporte para Ryzen de 3ra generación, conectividad WiFi 6 y diseño robusto.",
     },
-    "X570 Taichi": {
+    taichi_x570: {
+      nombre: "X570 Taichi",
+      imagen: "./recursos/img/productos/mother/taichi_x570.png",
       socket: "AM4",
       chipset: "X570",
       precio: 250,
       descripcion:
         "Tarjeta madre AMD AM4 con chipset X570, diseño Taichi de alta calidad, soporte PCIe 4.0 y audio de alta definición.",
     },
-    "B450 Tomahawk MAX": {
+    msi_tomahawk_b450: {
+      nombre: "B450 Tomahawk MAX",
+      imagen: "./recursos/img/productos/mother/msi_mag_b550.png",
       socket: "AM4",
       chipset: "B450",
       precio: 120,
@@ -391,35 +409,45 @@ export const mother = {
     },
   },
   Intel: {
-    "ROG Maximus XII Hero": {
+    asus_rog_z490: {
+      nombre: "ROG Maximus XII Hero",
+      imagen: "./recursos/img/productos/mother/rog_maximus_hero.png",
       socket: "LGA1200",
       chipset: "Z490",
       precio: 350,
       descripcion:
         "Tarjeta madre Intel LGA1200 con chipset Z490, diseño ROG Maximus y soporte para procesadores Intel Core de 10a generación.",
     },
-    "MSI MPG Z590 Gaming Edge": {
+    msi_mpg_z590: {
+      nombre: "MSI MPG Z590 Gaming Edge",
+      imagen: "./recursos/img/productos/mother/msi_mag_z590.png",
       socket: "LGA1200",
       chipset: "Z590",
       precio: 250,
       descripcion:
         "Tarjeta madre Intel LGA1200 con chipset Z590, diseño Gaming Edge y soporte para procesadores Intel Core de 10a y 11a generación.",
     },
-    "Gigabyte Z490 AORUS Elite AC": {
+    gigabyte_z490: {
+      nombre: "Gigabyte Z490 AORUS Elite AC",
+      imagen: "./recursos/img/productos/mother/gigabyte_aorus_z490.png",
       socket: "LGA1200",
       chipset: "Z490",
       precio: 220,
       descripcion:
         "Tarjeta madre Intel LGA1200 con chipset Z490, soporte para procesadores Intel Core de 10a generación y conectividad WiFi 6.",
     },
-    "ASRock Z590 Phantom Gaming 4": {
+    asrock_z590: {
+      nombre: "ASRock Z590 Phantom Gaming 4",
+      imagen: "./recursos/img/productos/mother/asrock_gaming_z590.png",
       socket: "LGA1200",
       chipset: "Z590",
       precio: 180,
       descripcion:
         "Tarjeta madre Intel LGA1200 con chipset Z590, diseño Phantom Gaming y soporte para procesadores Intel Core de 10a y 11a generación.",
     },
-    "MSI MAG B460M Mortar": {
+    msi_mag_b460m: {
+      nombre: "MSI MAG B460M Mortar",
+      imagen: "./recursos/img/productos/mother/msi_mag_b460m",
       socket: "LGA1200",
       chipset: "B460",
       precio: 130,
@@ -430,41 +458,49 @@ export const mother = {
 };
 
 export const gabo = {
-  marcas: {
-    Corsair: {
-      formato: "ATX",
-      modelo: "Carbide Series 275R",
-      precio: 80,
-      descripcion:
-        "Gabinete ATX de alta calidad con panel lateral de vidrio templado y excelente gestión de cables.",
-    },
-    NZXT: {
-      formato: "MicroATX",
-      modelo: "H210",
-      precio: 90,
-      descripcion:
-        "Gabinete compacto MicroATX con diseño elegante y panel frontal de vidrio templado.",
-    },
-    "Cooler Master": {
-      formato: "MiniITX",
-      modelo: "MasterBox NR200P",
-      precio: 100,
-      descripcion:
-        "Gabinete MiniITX compacto con diseño modular y excelente capacidad de enfriamiento.",
-    },
-    Phanteks: {
-      formato: "EATX",
-      modelo: "Enthoo Pro 2",
-      precio: 150,
-      descripcion:
-        "Gabinete EATX de alto rendimiento con múltiples opciones de almacenamiento y refrigeración líquida.",
-    },
-    "Fractal Design": {
-      formato: "FlexATX",
-      modelo: "Node 304",
-      precio: 110,
-      descripcion:
-        "Gabinete FlexATX compacto y versátil, ideal para sistemas de factor de forma pequeño (SFF).",
-    },
+  corsair: {
+    formato: "ATX",
+    imagen: "./recursos/img/productos/gabo/corsair_carboin.png",
+    nombre: "Carbide Series 275R",
+    marca: "Corsair",
+    precio: 80,
+    descripcion:
+      "Gabinete ATX de alta calidad con panel lateral de vidrio templado y excelente gestión de cables.",
+  },
+  nzxt: {
+    formato: "MicroATX",
+    imagen: "./recursos/img/productos/gabo/h210.png",
+    marca: "NZXT",
+    nombre: "H210",
+    precio: 90,
+    descripcion:
+      "Gabinete compacto MicroATX con diseño elegante y panel frontal de vidrio templado.",
+  },
+  cooler_master: {
+    formato: "MiniITX",
+    imagen: "./recursos/img/productos/gabo/nr200p.png",
+    marca: "Cooler Master",
+    nombre: "MasterBox NR200P",
+    precio: 100,
+    descripcion:
+      "Gabinete MiniITX compacto con diseño modular y excelente capacidad de enfriamiento.",
+  },
+  phanteks: {
+    formato: "EATX",
+    imagen: "./recursos/img/productos/gabo/phanteks.png",
+    marca: "Phanteks",
+    nombre: "Enthoo Pro 2",
+    precio: 150,
+    descripcion:
+      "Gabinete EATX de alto rendimiento con múltiples opciones de almacenamiento y refrigeración líquida.",
+  },
+  fractal_desing: {
+    marca: "Fractal Desing",
+    imagen: "./recursos/img/productos/gabo/fractal.png",
+    formato: "FlexATX",
+    nombre: "Node 304",
+    precio: 110,
+    descripcion:
+      "Gabinete FlexATX compacto y versátil, ideal para sistemas de factor de forma pequeño (SFF).",
   },
 };
