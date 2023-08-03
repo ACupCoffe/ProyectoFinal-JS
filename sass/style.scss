@@ -121,6 +121,28 @@ p {
     }
   }
 }
+
+.card--product__notfound {
+  background-color: #f5f6f6;
+
+  .error_header {
+    text-align: center;
+    margin: auto;
+    font-size: 10rem;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+
+  .error_context {
+    text-align: center;
+    margin: auto;
+
+    p {
+      font-size: 3rem;
+      margin: auto;
+    }
+  }
+}
 //Fin UTILIDADES
 
 // NAVEGACION
@@ -132,9 +154,6 @@ p {
 
   .menu-bar_links {
     background-color: white;
-    // display: grid;
-    // grid-template-columns: repeat(6, auto);
-    // align-content: space-evenly;
     display: flex;
     justify-content: space-between;
 
@@ -153,18 +172,26 @@ p {
 
     .input_search {
       display: flex;
+      flex-direction: row;
       width: 45%;
 
+      height: auto;
+
       #busqueda {
-        border: solid 1px #f5f6f6;
         border-radius: 5px;
         margin: auto 0;
+        border: solid 1px #f5f6f6;
         background-color: #f5f6f6;
         width: 100%;
         padding: 1rem 2.5rem;
       }
       :focus {
         outline: none;
+      }
+
+      #result_search {
+        color: red;
+        margin: auto 0;
       }
     }
   }
@@ -355,7 +382,7 @@ p {
   grid-template-columns: 30% auto;
   background-color: $color-fondo-blanco;
   margin-bottom: 2rem;
-  column-gap: 2rem;
+  column-gap: 12rem;
 
   .footer-bar__cont {
     p {
@@ -398,11 +425,11 @@ p {
     align-content: space-evenly;
 
     .div-category {
-      display: grid;
-      grid-template-rows: 20% auto;
+      display: flex;
+      flex-direction: column;
 
       h2 {
-        font-size: 1.8rem;
+        font-size: 2rem;
       }
 
       .div-category__sub {
@@ -424,6 +451,46 @@ p {
   }
 }
 // Fin FOOTER
+
+// CREACION DE PAGINA PRODUCTO
+
+.creacion_producto {
+  display: flex;
+  flex-direction: row;
+  margin: 5rem;
+  column-gap: 10rem;
+
+  .producto_img {
+    display: contents;
+    width: auto;
+    margin: auto;
+    img {
+      max-width: 30%;
+    }
+  }
+
+  .producto_contenido {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  .producto_contenido--final {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    .contenido_final--precio {
+      font-size: 4.5rem;
+    }
+
+    .contenido_final--comprar {
+      margin: 0;
+    }
+  }
+}
+
+// FIN CREACION DE PAGINA PRODUCTO
 
 //WEA
 .wea {
