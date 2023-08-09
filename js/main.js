@@ -15,7 +15,7 @@ function card_creator(producto, where) {
   tarjeta_contenedor.classList.add("card--product");
   tarjeta_contenedor.addEventListener("click", function () {
     console.log(producto);
-    window.location.href = "../pages/producto.html"; // IR A PRODUCTO
+    window.location.href = "./pages/producto.html"; // IR A PRODUCTO
   });
 
   if (datosComplete) {
@@ -129,13 +129,13 @@ input.addEventListener("keyup", function (event) {
 
     localStorage.setItem("termino_buscado", termino_buscado);
     console.log(termino_buscado);
-    window.location.href = "../pages/clasificados.html";
+    window.location.href = "./pages/clasificados.html";
   }
 });
 
 categoria_enlace.addEventListener("click", function () {
   localStorage.setItem("termino_buscado", "mostrar_todo");
-  window.location.href = "../pages/clasificados.html";
+  window.location.href = "./pages/clasificados.html";
 });
 
 const producto_buscado = localStorage.getItem("termino_buscado"); // GUARDADO
