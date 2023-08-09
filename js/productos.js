@@ -1,7 +1,7 @@
 export const gpu = {
   rx6600_asus: {
     nombre: "ASUS Radeon RX 6600",
-    imagen: "./recursos/img/productos/gpu/rx6600/asus-gpu.webp",
+    imagen: "../recursos/img/productos/gpu/rx6600/asus-gpu.webp",
     vram: "8GB",
     chipset: "Rx 6600",
     precio: 200,
@@ -10,7 +10,7 @@ export const gpu = {
   },
   rx6600_gigabyte: {
     nombre: "GIGABYTE Radeon RX 6600 Gaming OC",
-    imagen: "./recursos/img/productos/gpu/rx6600/gigabyte-gpu.webp",
+    imagen: "../recursos/img/productos/gpu/rx6600/gigabyte-gpu.webp",
     vram: "8GB",
     chipset: "Rx 6600",
     precio: 200,
@@ -19,7 +19,7 @@ export const gpu = {
   },
   rx6600_msi: {
     nombre: "MSI Radeon RX 6600 Gaming X",
-    imagen: "./recursos/img/productos/gpu/rx6600/msi-gpu-transformed.webp",
+    imagen: "../recursos/img/productos/gpu/rx6600/msi-gpu-transformed.webp",
     vram: "8GB",
     chipset: "Rx 6600",
     precio: 200,
@@ -28,7 +28,8 @@ export const gpu = {
   },
   rx6600_sapphire: {
     nombre: "Sapphire Pulse Radeon RX 6600",
-    imagen: "./recursos/img/productos/gpu/rx6600/sapphire-gpu-transformed.webp",
+    imagen:
+      "../recursos/img/productos/gpu/rx6600/sapphire-gpu-transformed.webp",
     vram: "8GB",
     chipset: "Rx 6600",
     precio: 200,
@@ -38,7 +39,7 @@ export const gpu = {
   rx6600_powercolor: {
     nombre: "PowerColor Red Devil Radeon RX 6600",
     imagen:
-      "./recursos/img/productos/gpu/rx6600/powercolor-removebg-preview.webp",
+      "../recursos/img/productos/gpu/rx6600/powercolor-removebg-preview.webp",
     vram: "8GB",
     chipset: "Rx 6600",
     precio: 200,
@@ -47,7 +48,7 @@ export const gpu = {
   },
   rx6600_xfx: {
     nombre: "XFX Speedster Radeon RX 6600",
-    imagen: "./recursos/img/productos/gpu/rx6600/xfx-gpu.png",
+    imagen: "../recursos/img/productos/gpu/rx6600/xfx-gpu.png",
     vram: "8GB",
     chipset: "Rx 6600",
     precio: 200,
@@ -56,7 +57,7 @@ export const gpu = {
   },
   rx6600_xt_asus: {
     nombre: "ASUS Radeon RX 6600 XT ROG Strix",
-    imagen: "./recursos/img/productos/gpu/rx6600_xt/asus-gpu.webp",
+    imagen: "../recursos/img/productos/gpu/rx6600_xt/asus-gpu.webp",
     vram: "8GB",
     chipset: "Rx 6600 XT",
     precio: 250,
@@ -65,7 +66,7 @@ export const gpu = {
   },
   rx6600_xt_msi: {
     nombre: "MSI Radeon RX 6600 XT Gaming X",
-    imagen: "./recursos/img/productos/gpu/rx6600_xt/msi-gpu.png",
+    imagen: "../recursos/img/productos/gpu/rx6600_xt/msi-gpu.png",
     vram: "8GB",
     chipset: "Rx 6600 XT",
     precio: 250,
@@ -74,7 +75,7 @@ export const gpu = {
   },
   rx6600_xt_gigabyte: {
     nombre: "GIGABYTE Radeon RX 6600 XT AORUS Master",
-    imagen: "./recursos/img/productos/gpu/rx6600_xt/gigabyte-gpu.webp",
+    imagen: "../recursos/img/productos/gpu/rx6600_xt/gigabyte-gpu.webp",
     vram: "8GB",
     chipset: "Rx 6600 XT",
     precio: 250,
@@ -83,7 +84,7 @@ export const gpu = {
   },
   rx6600_xt_sapphire: {
     nombre: "Sapphire Pulse Radeon RX 6600 XT",
-    imagen: "./recursos/img/productos/gpu/rx6600_xt/sapphire-gpu.png",
+    imagen: "../recursos/img/productos/gpu/rx6600_xt/sapphire-gpu.png",
     vram: "8GB",
     chipset: "Rx 6600 XT",
     precio: 250,
@@ -92,7 +93,7 @@ export const gpu = {
   },
   rx6600_xt_powercolor: {
     nombre: "PowerColor Red Devil Radeon RX 6600 XT",
-    imagen: "./recursos/img/productos/gpu/rx6600_xt/power_color-gpu.png",
+    imagen: "../recursos/img/productos/gpu/rx6600_xt/power_color-gpu.png",
     vram: "8GB",
     chipset: "Rx 6600 XT",
     precio: 250,
@@ -101,7 +102,7 @@ export const gpu = {
   },
   rx6600_xt_xfx: {
     nombre: "XFX Speedster QICK 308 Radeon RX 6600 XT",
-    imagen: "./recursos/img/productos/gpu/rx6600_xt/xfx-gpu.jpg",
+    imagen: "../recursos/img/productos/gpu/rx6600_xt/xfx-gpu.jpg",
     vram: "8GB",
     chipset: "Rx 6600 XT",
     precio: 250,
@@ -113,7 +114,7 @@ export const gpu = {
 export const cpu = {
   ryzen_5600x: {
     nombre: "Ryzen 5 5600x",
-    imagen: "./recursos/img/productos/cpu/amd/ryzen_5_5600x.png",
+    imagen: "../recursos/img/productos/cpu/amd/ryzen_5_5600x.png",
     cores: 6,
     precio: 300,
     descripcion:
@@ -123,7 +124,7 @@ export const cpu = {
   },
   ryzen_5800x: {
     nombre: "Ryzen 7 5800x",
-    imagen: "./recursos/img/productos/cpu/amd/ryzen_7_5800x.png",
+    imagen: "../recursos/img/productos/cpu/amd/ryzen_7_5800x.png",
     cores: 8,
     precio: 400,
     descripcion:
@@ -133,7 +134,7 @@ export const cpu = {
   },
   ryzen_5900x: {
     nombre: "Ryzen 9 5900x",
-    imagen: "./recursos/img/productos/cpu/amd/ryzen_9_5900x.png",
+    imagen: "../recursos/img/productos/cpu/amd/ryzen_9_5900x.png",
     cores: 12,
     precio: 600,
     descripcion:
@@ -143,7 +144,7 @@ export const cpu = {
   },
   ryzen_5600g: {
     nombre: "Ryzen 5 5600g",
-    imagen: "./recursos/img/productos/cpu/amd/ryzen_5_5600g.png",
+    imagen: "../recursos/img/productos/cpu/amd/ryzen_5_5600g.png",
     cores: 6,
     precio: 250,
     descripcion:
@@ -153,7 +154,7 @@ export const cpu = {
   },
   ryzen_5700g: {
     nombre: "Ryzen 7 5700g",
-    imagen: "./recursos/img/productos/cpu/amd/ryzen_7_5700g.png",
+    imagen: "../recursos/img/productos/cpu/amd/ryzen_7_5700g.png",
     cores: 8,
     precio: 350,
     descripcion:
@@ -163,7 +164,7 @@ export const cpu = {
   },
   intel_10600k: {
     nombre: "Intel Core Intel Core 10600k",
-    imagen: "./recursos/img/productos/cpu/intel/10600k.png",
+    imagen: "../recursos/img/productos/cpu/intel/10600k.png",
     cores: 6,
     precio: 250,
     descripcion:
@@ -173,7 +174,7 @@ export const cpu = {
   },
   intel_10700kf: {
     nombre: "Intel Core I7 10700kf",
-    imagen: "./recursos/img/productos/cpu/intel/10700kf.png",
+    imagen: "../recursos/img/productos/cpu/intel/10700kf.png",
     cores: 8,
     precio: 350,
     descripcion:
@@ -183,7 +184,7 @@ export const cpu = {
   },
   intel_10900k: {
     nombre: "Intel Core I9 10900k",
-    imagen: "./recursos/img/productos/cpu/intel/10900k.png",
+    imagen: "../recursos/img/productos/cpu/intel/10900k.png",
     cores: 10,
     precio: 500,
     descripcion:
@@ -193,7 +194,7 @@ export const cpu = {
   },
   intel_11600k: {
     nombre: "Intel Core I5 11600k",
-    imagen: "./recursos/img/productos/cpu/intel/11600k.png",
+    imagen: "../recursos/img/productos/cpu/intel/11600k.png",
     cores: 6,
     precio: 280,
     descripcion:
@@ -203,7 +204,7 @@ export const cpu = {
   },
   intel_11700k: {
     nombre: "Intel Core I7 11700k",
-    imagen: "./recursos/img/productos/cpu/intel/11700k.png",
+    imagen: "../recursos/img/productos/cpu/intel/11700k.png",
     cores: 8,
     precio: 400,
     descripcion:
@@ -216,7 +217,7 @@ export const cpu = {
 export const psu = {
   CX550: {
     nombre: "Corsair CX550 , Bronze 550w",
-    imagen: "./recursos/img/productos/psu/cx_550.png",
+    imagen: "../recursos/img/productos/psu/cx_550.png",
     watts: 550,
     certificacion80Plus: "Bronze",
     marca: "Corsair",
@@ -226,7 +227,7 @@ export const psu = {
   },
   SuperNOVA_650: {
     nombre: "EVGA SuperNOVA 650 GM, 80 Plus Gold 650W",
-    imagen: "./recursos/img/productos/psu/super_nova_650.png",
+    imagen: "../recursos/img/productos/psu/super_nova_650.png",
     watts: 650,
     certificacion80Plus: "Gold",
     marca: "EVGA",
@@ -236,7 +237,7 @@ export const psu = {
   },
   GX_850: {
     nombre: "Seasonic Focus GX-850, 850 W 80+ Gold",
-    imagen: "./recursos/img/productos/psu/gx_850.png",
+    imagen: "../recursos/img/productos/psu/gx_850.png",
     watts: 850,
     certificacion80Plus: "Gold",
     marca: "Seasonic",
@@ -246,7 +247,7 @@ export const psu = {
   },
   GF850W: {
     nombre: "Thermaltake Toughpower GF A3 850W",
-    imagen: "./recursos/img/productos/psu/thermaltake_850.png",
+    imagen: "../recursos/img/productos/psu/thermaltake_850.png",
     watts: 850,
     certificacion80Plus: "Gold",
     marca: "Thermaltake",
@@ -256,7 +257,7 @@ export const psu = {
   },
   E850: {
     nombre: "E850 Gold",
-    imagen: "./recursos/img/productos/psu/e850.png",
+    imagen: "../recursos/img/productos/psu/e850.png",
     watts: 850,
     certificacion80Plus: "Gold",
     marca: "NZXT",
@@ -266,7 +267,7 @@ export const psu = {
   },
   mwe650: {
     nombre: "Cooler Master MWE 650w Gold",
-    imagen: "./recursos/img/productos/psu/mwe_650.png",
+    imagen: "../recursos/img/productos/psu/mwe_650.png",
     watts: 650,
     certificacion80Plus: "Gold",
     marca: "Cooler Master",
@@ -382,7 +383,7 @@ export const ram = {
 export const mother = {
   rog_trix_b450: {
     nombre: "ROG Strix B450-F Gaming",
-    imagen: "./recursos/img/productos/mother/rog_stric_b450.png",
+    imagen: "../recursos/img/productos/mother/rog_stric_b450.png",
     socket: "AM4",
     empresa: "ASUS",
     chipset: "B450",
@@ -392,7 +393,7 @@ export const mother = {
   },
   mpg_x570: {
     nombre: "MPG X570 Gaming Plus",
-    imagen: "./recursos/img/productos/mother/msi_mpg_x570.png",
+    imagen: "../recursos/img/productos/mother/msi_mpg_x570.png",
     socket: "AM4",
     empresa: "MSI",
     chipset: "X570",
@@ -402,7 +403,7 @@ export const mother = {
   },
   aorus_b550: {
     nombre: "B550 AORUS Pro AC",
-    imagen: "./recursos/img/productos/mother/asus_prime_b550.png",
+    imagen: "../recursos/img/productos/mother/asus_prime_b550.png",
     socket: "AM4",
     empresa: "ASUS",
     chipset: "B550",
@@ -412,7 +413,7 @@ export const mother = {
   },
   taichi_x570: {
     nombre: "X570 Taichi",
-    imagen: "./recursos/img/productos/mother/taichi_x570.png",
+    imagen: "../recursos/img/productos/mother/taichi_x570.png",
     socket: "AM4",
     empresa: "ASROCK",
     chipset: "X570",
@@ -422,7 +423,7 @@ export const mother = {
   },
   msi_tomahawk_b450: {
     nombre: "B450 Tomahawk MAX",
-    imagen: "./recursos/img/productos/mother/msi_mag_b550.png",
+    imagen: "../recursos/img/productos/mother/msi_mag_b550.png",
     socket: "AM4",
     empresa: "MSI",
     chipset: "B450",
@@ -432,7 +433,7 @@ export const mother = {
   },
   asus_rog_z490: {
     nombre: "ROG Maximus XII Hero Z490",
-    imagen: "./recursos/img/productos/mother/rog_maximus_hero.png",
+    imagen: "../recursos/img/productos/mother/rog_maximus_hero.png",
     socket: "LGA1200",
     empresa: "ASUS",
     chipset: "Z490",
@@ -442,7 +443,7 @@ export const mother = {
   },
   msi_mpg_z590: {
     nombre: "MSI MPG Z590 Gaming Edge",
-    imagen: "./recursos/img/productos/mother/msi_mag_z590.png",
+    imagen: "../recursos/img/productos/mother/msi_mag_z590.png",
     socket: "LGA1200",
     empresa: "MSI",
     chipset: "Z590",
@@ -452,7 +453,7 @@ export const mother = {
   },
   gigabyte_z490: {
     nombre: "Gigabyte Z490 AORUS Elite AC",
-    imagen: "./recursos/img/productos/mother/gigabyte_aorus_z490.png",
+    imagen: "../recursos/img/productos/mother/gigabyte_aorus_z490.png",
     socket: "LGA1200",
     empresa: "GIGABYTE",
     chipset: "Z490",
@@ -462,7 +463,7 @@ export const mother = {
   },
   asrock_z590: {
     nombre: "ASRock Z590 Phantom Gaming 4",
-    imagen: "./recursos/img/productos/mother/asrock_gaming_z590.png",
+    imagen: "../recursos/img/productos/mother/asrock_gaming_z590.png",
     socket: "LGA1200",
     empresa: "ASROCK",
     chipset: "Z590",
@@ -472,7 +473,7 @@ export const mother = {
   },
   msi_mag_b460m: {
     nombre: "MSI MAG B460M Mortar",
-    imagen: "./recursos/img/productos/mother/msi_mag_b460m",
+    imagen: "../recursos/img/productos/mother/msi_mag_b460m",
     socket: "LGA1200",
     empresa: "MSI",
     chipset: "B460",
@@ -485,7 +486,7 @@ export const mother = {
 export const gabo = {
   corsair: {
     formato: "ATX",
-    imagen: "./recursos/img/productos/gabo/corsair_carboin.png",
+    imagen: "../recursos/img/productos/gabo/corsair_carboin.png",
     nombre: "Corsair Carbide Series 275R",
     marca: "Corsair",
     precio: 80,
@@ -494,7 +495,7 @@ export const gabo = {
   },
   nzxt: {
     formato: "MicroATX",
-    imagen: "./recursos/img/productos/gabo/h210.png",
+    imagen: "../recursos/img/productos/gabo/h210.png",
     marca: "NZXT",
     nombre: "NZXT H210",
     precio: 90,
@@ -503,7 +504,7 @@ export const gabo = {
   },
   cooler_master: {
     formato: "MiniITX",
-    imagen: "./recursos/img/productos/gabo/nr200p.png",
+    imagen: "../recursos/img/productos/gabo/nr200p.png",
     marca: "Cooler Master",
     nombre: "Cooler Master MasterBox NR200P",
     precio: 100,
@@ -512,7 +513,7 @@ export const gabo = {
   },
   phanteks: {
     formato: "EATX",
-    imagen: "./recursos/img/productos/gabo/phanteks.png",
+    imagen: "../recursos/img/productos/gabo/phanteks.png",
     marca: "Phanteks",
     nombre: "Phanteks Enthoo Pro 2",
     precio: 150,
@@ -521,7 +522,7 @@ export const gabo = {
   },
   fractal_desing: {
     marca: "Fractal Desing",
-    imagen: "./recursos/img/productos/gabo/fractal.png",
+    imagen: "../recursos/img/productos/gabo/fractal.png",
     formato: "FlexATX",
     nombre: "Fractal Desing Node 304",
     precio: 110,

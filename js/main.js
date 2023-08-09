@@ -1,14 +1,6 @@
-let funla = "HLA MUNDO";
-funla = funla.toLowerCase();
-console.log(funla); // TEST DE CONEXION
-
-let carrito = [];
-
-console.log(carrito);
-
 import { gpu, cpu, psu, ram, mother, gabo } from "./productos.js"; // IMPORTACION DE DATOS
 
-const productos = { gpu, cpu, psu, ram, mother, gabo }; // ALMACENAR TODA LA DATA EN UNA SOLA LISTA
+const productos = { ...gpu, ...cpu, ...psu, ...ram, ...mother, ...gabo }; // ALMACENAR TODA LA DATA EN UNA SOLA LISTA
 
 //CREACION DE LAS CARD
 function card_creator(producto, where) {
@@ -22,7 +14,8 @@ function card_creator(producto, where) {
   const tarjeta_contenedor = document.getElementById(where);
   tarjeta_contenedor.classList.add("card--product");
   tarjeta_contenedor.addEventListener("click", function () {
-    window.location.href = "./pages/producto.html";
+    console.log(producto);
+    window.location.href = "../pages/producto.html"; // IR A PRODUCTO
   });
 
   if (datosComplete) {
@@ -85,45 +78,97 @@ function card_creator(producto, where) {
 } // Producto = Objeto que anadir a la tarjeta ----- where = ID donde debe ir
 
 //FUNCION -- BARRA DE BUSQUEDA
-function search_by_term(term) {
-  term = term.toLowerCase();
+function realizarBusqueda(termino) {
+  let resultadoBusqueda = [];
 
-  const resultados = [];
-
-  for (const producto in productos) {
-    const categoriasProducto = productos[producto];
-
-    for (const variables in categoriasProducto) {
-      const objetoVariable = categoriasProducto[variables];
-
-      if (
-        objetoVariable.nombre.toLowerCase().includes(term) ||
-        (objetoVariable.descripcion &&
-          objetoVariable.descripcion.toLowerCase().includes(term)) ||
-        (objetoVariable.empresa &&
-          objetoVariable.empresa.toLowerCase().includes(term)) ||
-        (objetoVariable.socket &&
-          objetoVariable.socket.toLowerCase().includes(term) &&
-          term.trim() !== "")
-      ) {
-        resultados.push(objetoVariable.nombre);
-      }
+  Object.entries(productos).forEach(([clave, otro]) => {
+    if (
+      otro.nombre.toLowerCase().includes(termino) ||
+      otro.descripcion.toLowerCase().includes(termino)
+    ) {
+      resultadoBusqueda.push(productos[clave]);
     }
-  }
-
-  console.log(resultados); // MOSTRAR LOS QUE EXISTEN
+  });
+  return resultadoBusqueda;
 }
 
 // CARD DE TESTEO
-card_creator(cpu.ryzen_5600x, "recomendacion_1");
-card_creator(mother.aorus_b550, "recomendacion_2");
-card_creator(ram.vengance_lpx, "recomendacion_3");
-card_creator(gpu.rx6600_xt_xfx, "recomendacion_4");
+for (let i = 0; i < 5; i++) {
+  const test_id = document.getElementById("recomendacion_" + i);
+
+  if (test_id !== null) {
+    switch (i) {
+      case 1:
+        card_creator(cpu.ryzen_5600x, "recomendacion_" + i);
+        break;
+
+      case 2:
+        card_creator(mother.aorus_b550, "recomendacion_" + i);
+        break;
+
+      case 3:
+        card_creator(ram.vengance_lpx, "recomendacion_" + i);
+        break;
+
+      case 4:
+        card_creator(gpu.rx6600_xt_xfx, "recomendacion_" + i);
+    }
+  } else {
+  }
+}
 
 // INPUT -- BARRA DE BUSQUEDA
-const input = document.getElementById("busqueda");
-input.addEventListener("input", function () {
-  const input_term = this.value;
 
-  search_by_term(input_term);
+const input = document.getElementById("busqueda");
+
+const categoria_enlace = document.getElementById("mostrar_todo");
+
+input.addEventListener("keyup", function (event) {
+  if (event.key === "Enter") {
+    const termino_buscado = input.value;
+
+    localStorage.setItem("termino_buscado", termino_buscado);
+    console.log(termino_buscado);
+    window.location.href = "../pages/clasificados.html";
+  }
 });
+
+categoria_enlace.addEventListener("click", function () {
+  localStorage.setItem("termino_buscado", "mostrar_todo");
+  window.location.href = "../pages/clasificados.html";
+});
+
+const producto_buscado = localStorage.getItem("termino_buscado"); // GUARDADO
+
+let mostrar = realizarBusqueda(producto_buscado); // INDICAR QUE MOSTRAR
+
+const coincidencia_producto = document.getElementById("productos_coincidencia");
+
+if (producto_buscado === "mostrar_todo") {
+  let i = 0;
+  for (const key in productos) {
+    const objProducto = productos[key];
+    console.log(key, objProducto);
+    const where_card = document.createElement("a");
+    where_card.id = "producto_" + i;
+    coincidencia_producto.appendChild(where_card);
+    card_creator(objProducto, "producto_" + i);
+    i++;
+  }
+} else {
+  console.log("busqueda");
+  for (let i = 0; i < mostrar.length; i++) {
+    const where_card = document.createElement("a");
+    where_card.id = "producto_" + i;
+    coincidencia_producto.appendChild(where_card);
+    // const show_nombre = document.createElement("p");
+    // show_nombre.innerText = mostrar[i].nombre;
+    // where_card.appendChild(show_nombre);
+    // const show_precio = document.createElement("p");
+    // show_precio.innerText = mostrar[i].precio;
+    // where_card.appendChild(show_precio);
+
+    card_creator(mostrar[i], "producto_" + i);
+    console.log(typeof mostrar);
+  }
+}
