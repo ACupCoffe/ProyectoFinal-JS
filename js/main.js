@@ -36,7 +36,8 @@ function card_creator(producto, where) {
     // img
     const img_elemento = document.createElement("img");
     img_elemento.classList.add();
-    img_elemento.setAttribute("src", producto.imagen);
+    const ruta_org = producto.imagen;
+    img_elemento.setAttribute("src", ruta_org);
     contenedor_imagen.appendChild(img_elemento);
 
     // CONTENEDOR TEXTO
