@@ -28,6 +28,9 @@ function card_creator(producto, where) {
   });
 
   if (datosComplete) {
+    const input_search = document.querySelector("input");
+    const input_id = input_search.id;
+
     // CONTENEDOR IMAGEN
     const contenedor_imagen = document.createElement("div");
     contenedor_imagen.classList.add("card--product__img");
@@ -36,8 +39,19 @@ function card_creator(producto, where) {
     // img
     const img_elemento = document.createElement("img");
     img_elemento.classList.add();
-    const ruta_org = producto.imagen;
-    img_elemento.setAttribute("src", ruta_org);
+    const org_ruta_img = producto.imagen;
+
+    switch (input_id) {
+      case "busqueda_index":
+        const index_change = org_ruta_img.slice(1);
+        img_elemento.setAttribute("src", index_change);
+        break;
+
+      case "busqueda_folder":
+        img_elemento.setAttribute("src", org_ruta_img);
+        break;
+    }
+
     contenedor_imagen.appendChild(img_elemento);
 
     // CONTENEDOR TEXTO
@@ -128,7 +142,6 @@ for (let i = 0; i < 5; i++) {
 }
 
 // INPUT -- BARRA DE BUSQUEDA
-
 const input_search = document.querySelector("input");
 const input_id = input_search.id;
 
