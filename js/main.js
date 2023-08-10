@@ -1,5 +1,7 @@
 import { gpu, cpu, psu, ram, mother, gabo } from "./productos.js"; // IMPORTACION DE DATOS
 
+export { card_creator, realizarBusqueda };
+
 const productos = { ...gpu, ...cpu, ...psu, ...ram, ...mother, ...gabo }; // ALMACENAR TODA LA DATA EN UNA SOLA LISTA
 
 //CREACION DE LAS CARD
@@ -129,13 +131,13 @@ input.addEventListener("keyup", function (event) {
 
     localStorage.setItem("termino_buscado", termino_buscado);
     console.log(termino_buscado);
-    window.location.href = "./pages/clasificados.html";
+    window.location.href = "../pages/clasificados.html";
   }
 });
 
 categoria_enlace.addEventListener("click", function () {
   localStorage.setItem("termino_buscado", "mostrar_todo");
-  window.location.href = "pages/clasificados.html";
+  window.location.href = "../pages/clasificados.html";
 });
 
 const producto_buscado = localStorage.getItem("termino_buscado"); // GUARDADO
