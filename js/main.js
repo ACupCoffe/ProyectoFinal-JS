@@ -15,7 +15,16 @@ function card_creator(producto, where) {
   tarjeta_contenedor.classList.add("card--product");
   tarjeta_contenedor.addEventListener("click", function () {
     console.log(producto);
-    window.location.href = "/pages/producto.html"; // IR A PRODUCTO
+
+    switch (input_id) {
+      case "busqueda_index":
+        window.location.href = "./pages/producto.html"; // IR A PRODUCTO
+        break;
+
+      case "busqueda_folder":
+        window.location.href = "./producto.html"; // IR A PRODUCTO
+        break;
+    }
   });
 
   if (datosComplete) {
@@ -119,22 +128,37 @@ for (let i = 0; i < 5; i++) {
 
 // INPUT -- BARRA DE BUSQUEDA
 
-const input = document.getElementById("busqueda");
+const input_search = document.querySelector("input");
+const input_id = input_search.id;
+
+switch (input_id) {
+  case "busqueda_index":
+    input_search.addEventListener("keyup", function (event) {
+      if (event.key === "Enter") {
+        const termino_buscado = input_search.value;
+
+        localStorage.setItem("termino_buscado", termino_buscado);
+        window.location.href = "./pages/clasificados.html";
+      }
+    });
+    break;
+
+  case "busqueda_folder":
+    input_search.addEventListener("keyup", function (event) {
+      if (event.key === "Enter") {
+        const termino_buscado = input_search.value;
+
+        localStorage.setItem("termino_buscado", termino_buscado);
+        window.location.href = "./clasificados.html";
+      }
+    });
+    break;
+}
 
 const categoria_enlace = document.getElementById("mostrar_todo");
 
-input.addEventListener("keyup", function (event) {
-  if (event.key === "Enter") {
-    const termino_buscado = input.value;
-
-    localStorage.setItem("termino_buscado", termino_buscado);
-    window.location.href = "../pages/clasificados.html";
-  }
-});
-
 categoria_enlace.addEventListener("click", function () {
   localStorage.setItem("termino_buscado", "mostrar_todo");
-  window.location.href = "../pages/clasificados.html";
 });
 
 const producto_buscado = localStorage.getItem("termino_buscado"); // GUARDADO

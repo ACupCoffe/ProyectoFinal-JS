@@ -164,7 +164,7 @@ p {
   width: 45%;
   height: auto;
 }
-.menu-bar .menu-bar_links .input_search #busqueda {
+.menu-bar .menu-bar_links .input_search .busqueda {
   border-radius: 5px;
   margin: auto 0;
   border: solid 1px #f5f6f6;
