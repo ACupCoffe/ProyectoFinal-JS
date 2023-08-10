@@ -15,7 +15,7 @@ function card_creator(producto, where) {
   tarjeta_contenedor.classList.add("card--product");
   tarjeta_contenedor.addEventListener("click", function () {
     console.log(producto);
-    window.location.href = "./pages/producto.html"; // IR A PRODUCTO
+    window.location.href = "/pages/producto.html"; // IR A PRODUCTO
   });
 
   if (datosComplete) {
@@ -135,7 +135,7 @@ input.addEventListener("keyup", function (event) {
 
 categoria_enlace.addEventListener("click", function () {
   localStorage.setItem("termino_buscado", "mostrar_todo");
-  window.location.href = "./pages/clasificados.html";
+  window.location.href = "pages/clasificados.html";
 });
 
 const producto_buscado = localStorage.getItem("termino_buscado"); // GUARDADO
@@ -148,7 +148,6 @@ if (producto_buscado === "mostrar_todo") {
   let i = 0;
   for (const key in productos) {
     const objProducto = productos[key];
-    console.log(key, objProducto);
     const where_card = document.createElement("a");
     where_card.id = "producto_" + i;
     coincidencia_producto.appendChild(where_card);
