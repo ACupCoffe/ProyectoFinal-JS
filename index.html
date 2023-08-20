@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Sweet alert-->
     <link rel="stylesheet" href="./css/style.css" />
     <!-- Estilos -->
     <link rel="stylesheet" href="./css/variables.css" />
@@ -72,7 +74,9 @@
             </p>
           </div>
           <div class="contenido1_boton">
-            <a href="#">Mas Informacion</a>
+            <a href="./pages/clasificados.html" id="mostrar_todo"
+              >Mas Informacion</a
+            >
           </div>
         </div>
       </div>
@@ -81,9 +85,21 @@
       <div class="contenido2 contenedor">
         <h2>Lo necesario para el gaming</h2>
         <div class="contenido2_cards">
-          <a class="card_categori gpu" href="#">GPU</a>
-          <a class="card_categori cpu" href="#">CPU</a>
-          <a class="card_categori psu" href="#">PSU</a>
+          <a
+            class="enlace-categoria card_categori gpu"
+            href="./pages/clasificados.html"
+            >GPU</a
+          >
+          <a
+            class="enlace-categoria card_categori cpu"
+            href="./pages/clasificados.html"
+            >CPU</a
+          >
+          <a
+            class="enlace-categoria card_categori psu"
+            href="./pages/clasificados.html"
+            >PSU</a
+          >
         </div>
       </div>
       <!-- Fin CONTENIDO2 -->
@@ -95,16 +111,16 @@
         <!-- Fin HEADER -->
         <div class="contenido3_card" id="contenido3_card">
           <!-- PRODUCTO -->
-          <a id="recomendacion_1" href="#"></a>
+          <div id="recomendacion_1"></div>
           <!-- Fin PRODUCTO CARD-->
           <!-- PRODUCTO -->
-          <a id="recomendacion_2" href="#"></a>
+          <div id="recomendacion_2"></div>
           <!-- Fin PRODUCTO CARD-->
           <!-- PRODUCTO -->
-          <a id="recomendacion_4" href="#"></a>
+          <div id="recomendacion_4"></div>
           <!-- Fin PRODUCTO CARD-->
           <!-- PRODUCTO -->
-          <a id="recomendacion_3" href="#"></a>
+          <div id="recomendacion_3"></div>
           <!-- Fin PRODUCTO CARD-->
         </div>
       </div>
@@ -155,13 +171,27 @@
           <div class="div-category">
             <h2>Categorias</h2>
             <div class="div-category__sub">
-              <a href="#procesadores">Procesadores</a>
-              <a href="#tarjetas-gráficas">Tarjetas gráficas</a>
-              <a href="#placas-base">Placas base</a>
-              <a href="#memoria-ram">Memoria RAM</a>
-              <a href="#almacenamiento">Almacenamiento</a>
-              <a href="#fuentes-de-alimentación">Fuentes de alimentación</a>
-              <a href="#gabinetes">Gabinetes</a>
+              <a class="enlace-categoria" href="./pages/clasificados.html"
+                >Procesadores</a
+              >
+              <a class="enlace-categoria" href="./pages/clasificados.html"
+                >Tarjetas gráficas</a
+              >
+              <a class="enlace-categoria" href="./pages/clasificados.html"
+                >Placas base</a
+              >
+              <a class="enlace-categoria" href="./pages/clasificados.html"
+                >Memoria RAM</a
+              >
+              <a class="enlace-categoria" href="./pages/clasificados.html"
+                >Almacenamiento</a
+              >
+              <a class="enlace-categoria" href="./pages/clasificados.html"
+                >Fuentes de alimentación</a
+              >
+              <a class="enlace-categoria" href="./pages/clasificados.html"
+                >Gabinetes</a
+              >
             </div>
           </div>
           <!-- Fin COMPONENTES -->

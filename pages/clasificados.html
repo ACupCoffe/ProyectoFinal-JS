@@ -3,6 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <!-- Sweet alert-->
     <link rel="stylesheet" href="../css/style.css" />
     <!-- Estilos -->
     <link rel="stylesheet" href="../css/variables.css" />
@@ -65,9 +67,9 @@
       <!-- MOSTRAR CONTENIDO FILTRACIONES -->
       <div class="contenedor_search">
         <div class="lista_categoria">
-          <h1>CATEGORIAS</h1>
+          <h1 id="obtener_valor_para_filtrado">CATEGORIAS</h1>
           <div class="categoria_producto">
-            <h2>Placas de Video</h2>
+            <h2>Placa de Video</h2>
             <div class="subcategoria">
               <h3>AMD</h3>
               <ul>
@@ -82,7 +84,7 @@
             </div>
           </div>
           <div class="categoria_producto">
-            <h2>Fuente de Alimentacion</h2>
+            <h2>Fuente de Alimentación</h2>
             <div class="subcategoria">
               <h3>Marca</h3>
               <ul>
@@ -206,13 +208,27 @@
           <div class="div-category">
             <h2>Categorias</h2>
             <div class="div-category__sub">
-              <a href="#procesadores">Procesadores</a>
-              <a href="#tarjetas-gráficas">Tarjetas gráficas</a>
-              <a href="#placas-base">Placas base</a>
-              <a href="#memoria-ram">Memoria RAM</a>
-              <a href="#almacenamiento">Almacenamiento</a>
-              <a href="#fuentes-de-alimentación">Fuentes de alimentación</a>
-              <a href="#gabinetes">Gabinetes</a>
+              <a class="enlace-categoria" href="./clasificados.html"
+                >Procesadores</a
+              >
+              <a class="enlace-categoria" href="./clasificados.html"
+                >Tarjetas gráficas</a
+              >
+              <a class="enlace-categoria" href="./clasificados.html"
+                >Placas base</a
+              >
+              <a class="enlace-categoria" href="./clasificados.html"
+                >Memoria RAM</a
+              >
+              <a class="enlace-categoria" href="./clasificados.html"
+                >Almacenamiento</a
+              >
+              <a class="enlace-categoria" href="./clasificados.html"
+                >Fuentes de alimentación</a
+              >
+              <a class="enlace-categoria" href="./clasificados.html"
+                >Gabinetes</a
+              >
             </div>
           </div>
           <!-- Fin COMPONENTES -->

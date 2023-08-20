@@ -5,6 +5,7 @@ export const gpu = {
     vram: "8GB",
     chipset: "Rx 6600",
     precio: 200,
+    claves_busqueda: "amd placa de video tarjetas gráficas gpu",
     descripcion:
       "Potente tarjeta gráfica para juegos con 8GB de memoria GDDR6 y soporte para Ray Tracing para una experiencia visual impresionante",
   },
@@ -14,6 +15,7 @@ export const gpu = {
     vram: "8GB",
     chipset: "Rx 6600",
     precio: 200,
+    claves_busqueda: "amd placa de video tarjetas gráficas gpu",
     descripcion:
       "Rendimiento excepcional para juegos en resoluciones 1080p, equipada con 8GB de memoria GDDR6 y diseño de triple ventilador",
   },
@@ -23,6 +25,7 @@ export const gpu = {
     vram: "8GB",
     chipset: "Rx 6600",
     precio: 200,
+    claves_busqueda: "amd placa de video tarjetas gráficas gpu",
     descripcion:
       "Tarjeta gráfica de alta calidad para jugadores exigentes, con sistema de enfriamiento avanzado y 8GB de VRAM",
   },
@@ -33,6 +36,7 @@ export const gpu = {
     vram: "8GB",
     chipset: "Rx 6600",
     precio: 200,
+    claves_busqueda: "amd placa de video tarjetas gráficas gpu",
     descripcion:
       "Tarjeta gráfica compacta y potente con diseño elegante y gran rendimiento en juegos de última generación",
   },
@@ -43,6 +47,7 @@ export const gpu = {
     vram: "8GB",
     chipset: "Rx 6600",
     precio: 200,
+    claves_busqueda: "amd placa de video tarjetas gráficas gpu",
     descripcion:
       "Tarjeta gráfica para jugadores entusiastas, con overclocking de fábrica y características avanzadas de enfriamiento",
   },
@@ -52,6 +57,7 @@ export const gpu = {
     vram: "8GB",
     chipset: "Rx 6600",
     precio: 200,
+    claves_busqueda: "amd placa de video tarjetas gráficas gpu",
     descripcion:
       "Tarjeta gráfica diseñada para un rendimiento óptimo en juegos de alta exigencia, con 8GB de VRAM y diseño personalizado",
   },
@@ -61,6 +67,7 @@ export const gpu = {
     vram: "8GB",
     chipset: "Rx 6600 XT",
     precio: 250,
+    claves_busqueda: "amd placa de video tarjetas gráficas gpu",
     descripcion:
       "Potente tarjeta gráfica para juegos de alta gama, diseñada con el exclusivo sistema de enfriamiento ROG Strix y 8GB de memoria GDDR6 para una experiencia de juego inmersiva",
   },
@@ -70,6 +77,7 @@ export const gpu = {
     vram: "8GB",
     chipset: "Rx 6600 XT",
     precio: 250,
+    claves_busqueda: "amd placa de video tarjetas gráficas gpu",
     descripcion:
       "Tarjeta gráfica de alta calidad con un rendimiento excepcional en resoluciones 1080p y 1440p, equipada con 8GB de VRAM GDDR6 y tecnología de enfriamiento avanzada",
   },
@@ -79,6 +87,7 @@ export const gpu = {
     vram: "8GB",
     chipset: "Rx 6600 XT",
     precio: 250,
+    claves_busqueda: "amd placa de video tarjetas gráficas gpu",
     descripcion:
       "Tarjeta gráfica de la serie AORUS Master con diseño personalizado y componentes de alta calidad para un rendimiento y estabilidad superiores en juegos exigentes",
   },
@@ -88,6 +97,7 @@ export const gpu = {
     vram: "8GB",
     chipset: "Rx 6600 XT",
     precio: 250,
+    claves_busqueda: "amd placa de video tarjetas gráficas gpu",
     descripcion:
       "Tarjeta gráfica compacta con diseño elegante y gran eficiencia energética, perfecta para juegos en resoluciones 1080p con 8GB de memoria GDDR6",
   },
@@ -97,6 +107,7 @@ export const gpu = {
     vram: "8GB",
     chipset: "Rx 6600 XT",
     precio: 250,
+    claves_busqueda: "amd placa de video tarjetas gráficas gpu",
     descripcion:
       "Tarjeta gráfica diseñada para jugadores entusiastas, con overclocking de fábrica y sistema de enfriamiento avanzado para un rendimiento máximo",
   },
@@ -106,6 +117,7 @@ export const gpu = {
     vram: "8GB",
     chipset: "Rx 6600 XT",
     precio: 250,
+    claves_busqueda: "amd placa de video tarjetas gráficas gpu",
     descripcion:
       "Tarjeta gráfica con diseño moderno y compacto, ideal para sistemas de factor de forma pequeño (SFF), con 8GB de VRAM GDDR6 y alto rendimiento en juegos",
   },
@@ -120,6 +132,7 @@ export const cpu = {
     descripcion:
       "Procesador Ryzen 5 de 6 núcleos y 12 hilos con alto rendimiento en aplicaciones y juegos para usuarios exigentes.",
     socket: "AM4",
+    claves_busqueda: " amd procesadores am4 procesador cpu ",
     empresa: "AMD",
   },
   ryzen_5800x: {
@@ -130,6 +143,7 @@ export const cpu = {
     descripcion:
       "Procesador Ryzen 7 de 8 núcleos y 16 hilos diseñado para tareas de alta carga de trabajo y juegos intensivos.",
     socket: "AM4",
+    claves_busqueda: " amd procesadores am4 procesador cpu ",
     empresa: "AMD",
   },
   ryzen_5900x: {
@@ -140,6 +154,7 @@ export const cpu = {
     descripcion:
       "Procesador Ryzen 9 de 12 núcleos y 24 hilos para una potencia excepcional en aplicaciones profesionales y experiencias de juego inigualables.",
     socket: "AM4",
+    claves_busqueda: " amd procesadores am4 procesador cpu ",
     empresa: "AMD",
   },
   ryzen_5600g: {
@@ -150,6 +165,7 @@ export const cpu = {
     descripcion:
       "Procesador Ryzen 5 con gráficos integrados Radeon, ideal para sistemas compactos y aplicaciones multimedia.",
     socket: "AM4",
+    claves_busqueda: " amd procesadores am4 procesador cpu ",
     empresa: "AMD",
   },
   ryzen_5700g: {
@@ -160,6 +176,7 @@ export const cpu = {
     descripcion:
       "Procesador Ryzen 7 con gráficos Radeon para una experiencia de juego sin problemas y rendimiento en aplicaciones multitarea.",
     socket: "AM4",
+    claves_busqueda: " amd procesadores am4 procesador cpu ",
     empresa: "AMD",
   },
   intel_10600k: {
@@ -170,6 +187,7 @@ export const cpu = {
     descripcion:
       "Procesador de 10a generación desbloqueado para overclocking, con 6 núcleos y 12 hilos para un rendimiento excepcional en juegos y tareas intensivas.",
     socket: "LGA1200",
+    claves_busqueda: "intel procesadores procesador cpu",
     empresa: "Intel",
   },
   intel_10700kf: {
@@ -180,6 +198,7 @@ export const cpu = {
     descripcion:
       "Procesador de 10a generación desbloqueado con 8 núcleos y 16 hilos para un rendimiento potente en juegos y aplicaciones con alta carga de trabajo.",
     socket: "LGA1200",
+    claves_busqueda: "intel procesadores procesador cpu",
     empresa: "Intel",
   },
   intel_10900k: {
@@ -190,6 +209,7 @@ export const cpu = {
     descripcion:
       "Procesador de 10a generación desbloqueado con 10 núcleos y 20 hilos, ideal para juegos y tareas de edición y renderizado intensivas.",
     socket: "LGA1200",
+    claves_busqueda: "intel procesadores procesador cpu",
     empresa: "Intel",
   },
   intel_11600k: {
@@ -200,6 +220,7 @@ export const cpu = {
     descripcion:
       "Procesador de 11a generación desbloqueado con 6 núcleos y 12 hilos, perfecto para jugadores y creadores de contenido.",
     socket: "LGA1200",
+    claves_busqueda: "intel procesadores procesador cpu",
     empresa: "Intel",
   },
   intel_11700k: {
@@ -210,6 +231,7 @@ export const cpu = {
     descripcion:
       "Procesador de 11a generación desbloqueado con 8 núcleos y 16 hilos para un rendimiento excepcional en tareas exigentes.",
     socket: "LGA1200",
+    claves_busqueda: "intel procesadores procesador cpu",
     empresa: "Intel",
   },
 };
@@ -219,6 +241,8 @@ export const psu = {
     nombre: "Corsair CX550 , Bronze 550w",
     imagen: "../recursos/img/productos/psu/cx_550.png",
     watts: 550,
+    claves_busqueda:
+      "alimentación fuentes de alimentacion fuente de poder power supply psu",
     certificacion80Plus: "Bronze",
     marca: "Corsair",
     precio: 80,
@@ -229,6 +253,8 @@ export const psu = {
     nombre: "EVGA SuperNOVA 650 GM, 80 Plus Gold 650W",
     imagen: "../recursos/img/productos/psu/super_nova_650.png",
     watts: 650,
+    claves_busqueda:
+      "fuentes de alimentación fuentes de alimentacion fuente de poder power supply psu",
     certificacion80Plus: "Gold",
     marca: "EVGA",
     precio: 100,
@@ -239,6 +265,8 @@ export const psu = {
     nombre: "Seasonic Focus GX-850, 850 W 80+ Gold",
     imagen: "../recursos/img/productos/psu/gx_850.png",
     watts: 850,
+    claves_busqueda:
+      "fuentes de alimentación fuentes de alimentacion fuente de poder power supply psu",
     certificacion80Plus: "Gold",
     marca: "Seasonic",
     precio: 150,
@@ -249,6 +277,8 @@ export const psu = {
     nombre: "Thermaltake Toughpower GF A3 850W",
     imagen: "../recursos/img/productos/psu/thermaltake_850.png",
     watts: 850,
+    claves_busqueda:
+      "fuentes de alimentación fuentes de alimentacion fuente de poder power supply psu",
     certificacion80Plus: "Gold",
     marca: "Thermaltake",
     precio: 180,
@@ -259,6 +289,8 @@ export const psu = {
     nombre: "E850 Gold",
     imagen: "../recursos/img/productos/psu/e850.png",
     watts: 850,
+    claves_busqueda:
+      "fuentes de alimentación fuentes de alimentacion fuente de poder power supply psu",
     certificacion80Plus: "Gold",
     marca: "NZXT",
     precio: 250,
@@ -269,6 +301,8 @@ export const psu = {
     nombre: "Cooler Master MWE 650w Gold",
     imagen: "../recursos/img/productos/psu/mwe_650.png",
     watts: 650,
+    claves_busqueda:
+      "fuentes de alimentación fuentes de alimentacion fuente de poder power supply psu",
     certificacion80Plus: "Gold",
     marca: "Cooler Master",
     precio: 90,
@@ -282,6 +316,7 @@ export const ram = {
     nombre: "DDR4 Vengeance LPX 16GB (2 x 8GB) 3200MHz",
     cantidad: 2,
     capacidad: "16GB",
+    claves_busqueda: "memoria ram RAM",
     velocidad: "3200MHz",
     tipo: "DDR4",
     precio: 100,
@@ -292,6 +327,7 @@ export const ram = {
     nombre: "DDR4 Ripjaws V 32GB (2 x 16GB) 3600MHz",
     cantidad: 2,
     capacidad: "32GB",
+    claves_busqueda: "memoria ram RAM",
     velocidad: "3600MHz",
     tipo: "DDR4",
     precio: 150,
@@ -302,6 +338,7 @@ export const ram = {
     nombre: "DDR4 HyperX Fury 8GB 2666MHz",
     cantidad: 1,
     capacidad: "8GB",
+    claves_busqueda: "memoria ram RAM",
     velocidad: "2666MHz",
     tipo: "DDR4",
     precio: 80,
@@ -312,6 +349,7 @@ export const ram = {
     nombre: "DDR4 Ballistix RGB 64GB (4 x 16GB) 3600MHz",
     cantidad: 4,
     capacidad: "64GB",
+    claves_busqueda: "memoria ram RAM",
     velocidad: "3600MHz",
     tipo: "DDR4",
     precio: 250,
@@ -322,6 +360,7 @@ export const ram = {
     nombre: "DDR4 XPG Spectrix D60G 32GB (2 x 16GB) 3200MHz",
     cantidad: 2,
     capacidad: "32GB",
+    claves_busqueda: "memoria ram RAM",
     velocidad: "3200MHz",
     tipo: "DDR4",
     precio: 120,
@@ -332,6 +371,7 @@ export const ram = {
     nombre: "DDR5 Vengeance RGB Pro 16GB (2 x 8GB) 5200MHz",
     cantidad: 2,
     capacidad: "16GB",
+    claves_busqueda: "memoria ram RAM",
     velocidad: "5200MHz",
     tipo: "DDR5",
     precio: 200,
@@ -342,6 +382,7 @@ export const ram = {
     nombre: "DDR5 Trident Z 64GB (2 x 32GB) 6000MHz",
     caantidad: 2,
     capacidad: "64GB",
+    claves_busqueda: "memoria ram RAM",
     velocidad: "6000MHz",
     tipo: "DDR5",
     precio: 350,
@@ -352,6 +393,7 @@ export const ram = {
     nombre: "DDR5 Fury Renegade 32GB (2 x 16GB) 5400MHz",
     cantidad: 2,
     capacidad: "32GB",
+    claves_busqueda: "memoria ram RAM",
     velocidad: "5400MHz",
     tipo: "DDR5",
     precio: 280,
@@ -362,6 +404,7 @@ export const ram = {
     nombre: "DDR5 Ballistix Max 128GB (4 x 32GB) 6400MHz",
     cantidad: 4,
     capacidad: "128GB",
+    claves_busqueda: "memoria ram RAM",
     velocidad: "6400MHz",
     tipo: "DDR5",
     precio: 500,
@@ -372,6 +415,7 @@ export const ram = {
     nombre: "DDR5 XPG Hunter 16GB (2 x 8GB) 4800MHz",
     cantidad: 2,
     capacidad: "16GB",
+    claves_busqueda: "memoria ram RAM",
     velocidad: "4800MHz",
     tipo: "DDR5",
     precio: 180,
@@ -383,8 +427,9 @@ export const ram = {
 export const mother = {
   rog_trix_b450: {
     nombre: "ROG Strix B450-F Gaming",
-    imagen: "../recursos/img/productos/mother/rog_stric_b450.png",
+    imagen: "../recursos/img/productos/mother/rog_strix_b450.png",
     socket: "AM4",
+    claves_busqueda: "amd placa madre placas base am4 ",
     empresa: "ASUS",
     chipset: "B450",
     precio: 150,
@@ -395,6 +440,7 @@ export const mother = {
     nombre: "MPG X570 Gaming Plus",
     imagen: "../recursos/img/productos/mother/msi_mpg_x570.png",
     socket: "AM4",
+    claves_busqueda: "amd placa madre placas base am4 ",
     empresa: "MSI",
     chipset: "X570",
     precio: 180,
@@ -405,6 +451,7 @@ export const mother = {
     nombre: "B550 AORUS Pro AC",
     imagen: "../recursos/img/productos/mother/asus_prime_b550.png",
     socket: "AM4",
+    claves_busqueda: "amd placa madre placas base am4 ",
     empresa: "ASUS",
     chipset: "B550",
     precio: 160,
@@ -415,6 +462,7 @@ export const mother = {
     nombre: "X570 Taichi",
     imagen: "../recursos/img/productos/mother/taichi_x570.png",
     socket: "AM4",
+    claves_busqueda: "amd placa madre placas base am4 ",
     empresa: "ASROCK",
     chipset: "X570",
     precio: 250,
@@ -425,6 +473,7 @@ export const mother = {
     nombre: "B450 Tomahawk MAX",
     imagen: "../recursos/img/productos/mother/msi_mag_b550.png",
     socket: "AM4",
+    claves_busqueda: "amd placa madre placas base am4 ",
     empresa: "MSI",
     chipset: "B450",
     precio: 120,
@@ -435,6 +484,7 @@ export const mother = {
     nombre: "ROG Maximus XII Hero Z490",
     imagen: "../recursos/img/productos/mother/rog_maximus_hero.png",
     socket: "LGA1200",
+    claves_busqueda: " intel placa madre placas base",
     empresa: "ASUS",
     chipset: "Z490",
     precio: 350,
@@ -445,6 +495,7 @@ export const mother = {
     nombre: "MSI MPG Z590 Gaming Edge",
     imagen: "../recursos/img/productos/mother/msi_mag_z590.png",
     socket: "LGA1200",
+    claves_busqueda: " intel placa madre placas base",
     empresa: "MSI",
     chipset: "Z590",
     precio: 250,
@@ -455,6 +506,7 @@ export const mother = {
     nombre: "Gigabyte Z490 AORUS Elite AC",
     imagen: "../recursos/img/productos/mother/gigabyte_aorus_z490.png",
     socket: "LGA1200",
+    claves_busqueda: " intel placa madre placas base",
     empresa: "GIGABYTE",
     chipset: "Z490",
     precio: 220,
@@ -463,8 +515,9 @@ export const mother = {
   },
   asrock_z590: {
     nombre: "ASRock Z590 Phantom Gaming 4",
-    imagen: "../recursos/img/productos/mother/asrock_gaming_z590.png",
+    imagen: "../recursos/img/productos/mother/phanton_gaming_z590.png",
     socket: "LGA1200",
+    claves_busqueda: " intel placa madre placas base",
     empresa: "ASROCK",
     chipset: "Z590",
     precio: 180,
@@ -475,6 +528,7 @@ export const mother = {
     nombre: "MSI MAG B460M Mortar",
     imagen: "../recursos/img/productos/mother/msi_mag_b460m",
     socket: "LGA1200",
+    claves_busqueda: " intel placa madre placas",
     empresa: "MSI",
     chipset: "B460",
     precio: 130,
@@ -488,6 +542,7 @@ export const gabo = {
     formato: "ATX",
     imagen: "../recursos/img/productos/gabo/corsair_carboin.png",
     nombre: "Corsair Carbide Series 275R",
+    claves_busqueda: " gabinete gabinetes gabo",
     marca: "Corsair",
     precio: 80,
     descripcion:
@@ -496,6 +551,7 @@ export const gabo = {
   nzxt: {
     formato: "MicroATX",
     imagen: "../recursos/img/productos/gabo/h210.png",
+    claves_busqueda: " gabinete gabinetes gabo",
     marca: "NZXT",
     nombre: "NZXT H210",
     precio: 90,
@@ -505,6 +561,7 @@ export const gabo = {
   cooler_master: {
     formato: "MiniITX",
     imagen: "../recursos/img/productos/gabo/nr200p.png",
+    claves_busqueda: " gabinete gabinetes gabo",
     marca: "Cooler Master",
     nombre: "Cooler Master MasterBox NR200P",
     precio: 100,
@@ -514,13 +571,15 @@ export const gabo = {
   phanteks: {
     formato: "EATX",
     imagen: "../recursos/img/productos/gabo/phanteks.png",
+    claves_busqueda: " gabinete gabinetes gabo",
     marca: "Phanteks",
     nombre: "Phanteks Enthoo Pro 2",
     precio: 150,
     descripcion:
-      "Gabinete EATX de alto rendimiento con múltiples opciones de almacenamiento y refrigeración líquida.",
+      "Gabinete EATX de alto rendimiento con múltiples opciones y refrigeración líquida.",
   },
   fractal_desing: {
+    claves_busqueda: " gabinete gabinetes gabo",
     marca: "Fractal Desing",
     imagen: "../recursos/img/productos/gabo/fractal.png",
     formato: "FlexATX",

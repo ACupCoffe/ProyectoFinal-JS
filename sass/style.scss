@@ -83,6 +83,7 @@ p {
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
 
   &:hover {
+    cursor: pointer;
     transform: scale(1.05);
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
   }
@@ -328,7 +329,7 @@ p {
     border-radius: 5%;
     a {
       text-decoration: none;
-      color: $color-fondo-parrafo;
+      color: white;
       font-family: "Inter", sans-serif;
     }
   }
@@ -407,10 +408,10 @@ p {
         display: grid;
         grid-template-columns: repeat(3, auto);
         grid-template-rows: repeat(2, auto);
-        gap: 2rem;
+        gap: 1rem;
 
         img {
-          width: 43px;
+          width: 4rem;
           height: auto;
           border: solid black 2px;
           border-radius: 25%;
@@ -488,6 +489,12 @@ p {
       h2 {
         font-size: 2.5rem;
         height: fit-content;
+        cursor: pointer;
+      }
+      h2:hover {
+        color: #3fb076;
+        transform: translateX(1rem);
+        transition: transform 0.3s ease;
       }
 
       .subcategoria {
@@ -495,10 +502,25 @@ p {
         h3 {
           height: fit-content;
           font-size: 2rem;
+          cursor: pointer;
+        }
+        h3:hover {
+          color: #3fb076;
+          transform: translateX(1rem);
+          transition: transform 0.3s ease;
         }
 
         ul {
           list-style: none;
+
+          li {
+            cursor: pointer;
+          }
+          li:hover {
+            color: #3fb076;
+            transform: translateX(1rem);
+            transition: transform 0.3s ease;
+          }
         }
       }
     }
@@ -612,6 +634,22 @@ p {
   }
 }
 //Fin WEA
+
+// Sweet Alert
+
+.swal2-title {
+  padding: 0;
+}
+#swal2-html-container {
+  font-size: 1.5rem;
+}
+
+.swal2-actions {
+  .swal2-confirm {
+    font-size: 2rem;
+  }
+}
+// FIN Sweet Alert
 
 // LINE DIVISION
 .line-division {

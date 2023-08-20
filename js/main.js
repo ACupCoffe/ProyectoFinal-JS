@@ -2,6 +2,7 @@ import { gpu, cpu, psu, ram, mother, gabo } from "./productos.js"; // IMPORTACIO
 
 const productos = { ...gpu, ...cpu, ...psu, ...ram, ...mother, ...gabo }; // ALMACENAR TODA LA DATA EN UNA SOLA LISTA
 
+let objeto_producto = [];
 //CREACION DE LAS CARD
 function card_creator(producto, where) {
   const datosComplete =
@@ -11,23 +12,24 @@ function card_creator(producto, where) {
     producto.imagen !== undefined;
 
   // CONTORNO DE LA TARJETA
-  const tarjeta_contenedor = document.getElementById(where);
-  tarjeta_contenedor.classList.add("card--product");
-  tarjeta_contenedor.addEventListener("click", function () {
-    console.log(producto);
-
-    switch (input_id) {
-      case "busqueda_index":
-        window.location.href = "./pages/producto.html"; // IR A PRODUCTO
-        break;
-
-      case "busqueda_folder":
-        window.location.href = "./producto.html"; // IR A PRODUCTO
-        break;
-    }
-  });
-
   if (datosComplete) {
+    const tarjeta_contenedor = document.getElementById(where);
+    tarjeta_contenedor.classList.add("card--product");
+    tarjeta_contenedor.addEventListener("click", function () {
+      let mostrar_en_producto = producto;
+      objeto_producto.push(mostrar_en_producto);
+
+      switch (input_id) {
+        case "busqueda_index":
+          window.location.href = "./pages/producto.html"; // IR A PRODUCTO
+          break;
+
+        case "busqueda_folder":
+          window.location.href = "./producto.html"; // IR A PRODUCTO
+          break;
+      }
+    });
+
     const input_search = document.querySelector("input");
     const input_id = input_search.id;
 
@@ -78,11 +80,24 @@ function card_creator(producto, where) {
     contenedor_contenido.appendChild(contenido_desc);
 
     // CONTENEDOR BOTON
-    const contenido_boton = document.createElement("div");
+    const contenido_boton = document.createElement("a");
     contenido_boton.classList.add("boton");
+    contenido_boton.addEventListener("click", function () {
+      window.location.href = "#";
+    });
     contenido_boton.innerText = "MAS INFORMACION";
     tarjeta_contenedor.appendChild(contenido_boton);
   } else {
+    const tarjeta_contenedor = document.getElementById(where);
+    tarjeta_contenedor.classList.add("card--product");
+    tarjeta_contenedor.addEventListener("click", function () {
+      Swal.fire({
+        title: "PRODUCTO NO ENCONTRADO",
+        icon: "question",
+        confirmButtonText: "Entendido",
+        text: "El producto seleccionado no se encuentra habilitado",
+      });
+    });
     // SI FALTA ALGUNA DATA HARA LO SIGUIENTE
     tarjeta_contenedor.classList.add("card--product__notfound");
     const error_header = document.createElement("p");
@@ -99,6 +114,8 @@ function card_creator(producto, where) {
       "El producto no se a encontrado , disculpar las molestias";
     error_context.appendChild(context_message);
   }
+
+  //console.log(producto);
 } // Producto = Objeto que anadir a la tarjeta ----- where = ID donde debe ir
 
 //FUNCION -- BARRA DE BUSQUEDA
@@ -108,7 +125,8 @@ function realizarBusqueda(termino) {
   Object.entries(productos).forEach(([clave, otro]) => {
     if (
       otro.nombre.toLowerCase().includes(termino) ||
-      otro.descripcion.toLowerCase().includes(termino)
+      otro.descripcion.toLowerCase().includes(termino) ||
+      otro.claves_busqueda.toLowerCase().includes(termino)
     ) {
       resultadoBusqueda.push(productos[clave]);
     }
@@ -169,6 +187,15 @@ switch (input_id) {
     break;
 }
 
+// FILTRACIONES
+var enlacesCategoria = document.querySelectorAll(".enlace-categoria");
+enlacesCategoria.forEach(function (enlace) {
+  enlace.addEventListener("click", function () {
+    var textoEnlace = enlace.textContent;
+    localStorage.setItem("termino_buscado", textoEnlace.toLowerCase());
+  });
+});
+
 const categoria_enlace = document.getElementById("mostrar_todo");
 
 categoria_enlace.addEventListener("click", function () {
@@ -185,26 +212,46 @@ if (producto_buscado === "mostrar_todo") {
   let i = 0;
   for (const key in productos) {
     const objProducto = productos[key];
-    const where_card = document.createElement("a");
+    const where_card = document.createElement("div");
     where_card.id = "producto_" + i;
     coincidencia_producto.appendChild(where_card);
     card_creator(objProducto, "producto_" + i);
     i++;
   }
 } else {
-  console.log("busqueda");
   for (let i = 0; i < mostrar.length; i++) {
     const where_card = document.createElement("a");
     where_card.id = "producto_" + i;
     coincidencia_producto.appendChild(where_card);
-    // const show_nombre = document.createElement("p");
-    // show_nombre.innerText = mostrar[i].nombre;
-    // where_card.appendChild(show_nombre);
-    // const show_precio = document.createElement("p");
-    // show_precio.innerText = mostrar[i].precio;
-    // where_card.appendChild(show_precio);
-
     card_creator(mostrar[i], "producto_" + i);
     console.log(typeof mostrar);
   }
 }
+
+let h2_elements = document.querySelectorAll(".categoria_producto h2");
+let h3_elements = document.querySelectorAll(".categoria_producto h3");
+let li_elements = document.querySelectorAll(".categoria_producto li");
+
+h2_elements.forEach(function (h2) {
+  h2.addEventListener("click", function () {
+    let categoria = h2.textContent;
+    localStorage.setItem("termino_buscado", categoria.toLowerCase());
+    location.reload();
+  });
+});
+
+h3_elements.forEach(function (h3) {
+  h3.addEventListener("click", function () {
+    let categoria = h3.textContent;
+    localStorage.setItem("termino_buscado", categoria.toLowerCase());
+    location.reload();
+  });
+});
+
+li_elements.forEach(function (li) {
+  li.addEventListener("click", function () {
+    let subcategoria = li.textContent;
+    localStorage.setItem("termino_buscado", subcategoria.toLowerCase());
+    location.reload();
+  });
+});
