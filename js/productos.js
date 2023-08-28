@@ -244,7 +244,7 @@ export const psu = {
     claves_busqueda:
       "alimentación fuentes de alimentacion fuente de poder power supply psu",
     certificacion80Plus: "Bronze",
-    marca: "Corsair",
+    empresa: "Corsair",
     precio: 80,
     descripcion:
       "Fuente de alimentación de 550W con certificación 80 Plus Bronze para una eficiencia energética sólida.",
@@ -256,7 +256,7 @@ export const psu = {
     claves_busqueda:
       "fuentes de alimentación fuentes de alimentacion fuente de poder power supply psu",
     certificacion80Plus: "Gold",
-    marca: "EVGA",
+    empresa: "EVGA",
     precio: 100,
     descripcion:
       "Fuente de alimentación de 600W con certificación 80 Plus Gold para una eficiencia y rendimiento superiores.",
@@ -268,7 +268,7 @@ export const psu = {
     claves_busqueda:
       "fuentes de alimentación fuentes de alimentacion fuente de poder power supply psu",
     certificacion80Plus: "Gold",
-    marca: "Seasonic",
+    empresa: "Seasonic",
     precio: 150,
     descripcion:
       "Fuente de alimentación de 750W con certificación 80 Plus Gold para una eficiencia excepcional y baja generación de calor.",
@@ -280,7 +280,7 @@ export const psu = {
     claves_busqueda:
       "fuentes de alimentación fuentes de alimentacion fuente de poder power supply psu",
     certificacion80Plus: "Gold",
-    marca: "Thermaltake",
+    empresa: "Thermaltake",
     precio: 180,
     descripcion:
       "Fuente de alimentación de 850W con certificación 80 Plus Gold y diseño modular para una fácil instalación.",
@@ -292,7 +292,7 @@ export const psu = {
     claves_busqueda:
       "fuentes de alimentación fuentes de alimentacion fuente de poder power supply psu",
     certificacion80Plus: "Gold",
-    marca: "NZXT",
+    empresa: "NZXT",
     precio: 250,
     descripcion:
       "Fuente de alimentación de 850W con certificación 80 Plus Titanium y control digital para una máxima eficiencia y rendimiento.",
@@ -304,7 +304,7 @@ export const psu = {
     claves_busqueda:
       "fuentes de alimentación fuentes de alimentacion fuente de poder power supply psu",
     certificacion80Plus: "Gold",
-    marca: "Cooler Master",
+    empresa: "Cooler Master",
     precio: 90,
     descripcion:
       "Fuente de alimentación de 600W con certificación 80 Plus Gold para una eficiencia confiable y rendimiento sólido.",
@@ -543,7 +543,7 @@ export const gabo = {
     imagen: "../recursos/img/productos/gabo/corsair_carboin.png",
     nombre: "Corsair Carbide Series 275R",
     claves_busqueda: " gabinete gabinetes gabo",
-    marca: "Corsair",
+    empresa: "Corsair",
     precio: 80,
     descripcion:
       "Gabinete ATX de alta calidad con panel lateral de vidrio templado y excelente gestión de cables.",
@@ -552,7 +552,7 @@ export const gabo = {
     formato: "MicroATX",
     imagen: "../recursos/img/productos/gabo/h210.png",
     claves_busqueda: " gabinete gabinetes gabo",
-    marca: "NZXT",
+    empresa: "NZXT",
     nombre: "NZXT H210",
     precio: 90,
     descripcion:
@@ -562,7 +562,7 @@ export const gabo = {
     formato: "MiniITX",
     imagen: "../recursos/img/productos/gabo/nr200p.png",
     claves_busqueda: " gabinete gabinetes gabo",
-    marca: "Cooler Master",
+    empresa: "Cooler Master",
     nombre: "Cooler Master MasterBox NR200P",
     precio: 100,
     descripcion:
@@ -572,7 +572,7 @@ export const gabo = {
     formato: "EATX",
     imagen: "../recursos/img/productos/gabo/phanteks.png",
     claves_busqueda: " gabinete gabinetes gabo",
-    marca: "Phanteks",
+    empresa: "Phanteks",
     nombre: "Phanteks Enthoo Pro 2",
     precio: 150,
     descripcion:
@@ -580,7 +580,7 @@ export const gabo = {
   },
   fractal_desing: {
     claves_busqueda: " gabinete gabinetes gabo",
-    marca: "Fractal Desing",
+    empresa: "Fractal Desing",
     imagen: "../recursos/img/productos/gabo/fractal.png",
     formato: "FlexATX",
     nombre: "Fractal Desing Node 304",

@@ -2,7 +2,6 @@ import { gpu, cpu, psu, ram, mother, gabo } from "./productos.js"; // IMPORTACIO
 
 const productos = { ...gpu, ...cpu, ...psu, ...ram, ...mother, ...gabo }; // ALMACENAR TODA LA DATA EN UNA SOLA LISTA
 
-let objeto_producto = [];
 //CREACION DE LAS CARD
 function card_creator(producto, where) {
   const datosComplete =
@@ -16,15 +15,14 @@ function card_creator(producto, where) {
     const tarjeta_contenedor = document.getElementById(where);
     tarjeta_contenedor.classList.add("card--product");
     tarjeta_contenedor.addEventListener("click", function () {
-      let mostrar_en_producto = producto;
-      objeto_producto.push(mostrar_en_producto);
-
       switch (input_id) {
         case "busqueda_index":
+          localStorage.setItem("producto", producto.nombre.toLowerCase());
           window.location.href = "./pages/producto.html"; // IR A PRODUCTO
           break;
 
         case "busqueda_folder":
+          localStorage.setItem("producto", producto.nombre.toLowerCase());
           window.location.href = "./producto.html"; // IR A PRODUCTO
           break;
       }
@@ -114,12 +112,57 @@ function card_creator(producto, where) {
       "El producto no se a encontrado , disculpar las molestias";
     error_context.appendChild(context_message);
   }
-
   //console.log(producto);
 } // Producto = Objeto que anadir a la tarjeta ----- where = ID donde debe ir
 
+// CREACION PAGIN PRODUCTO
+
+function page_producto(producto) {
+  const img_producto = document.getElementById("imagen_producto");
+
+  const input_search = document.querySelector("input");
+  const input_id = input_search.id;
+
+  switch (input_id) {
+    case "busqueda_index":
+      const index_change = producto.imagen.slice(1);
+      img_producto.setAttribute("src", index_change);
+      break;
+
+    case "busqueda_folder":
+      img_producto.setAttribute("src", producto.imagen);
+      break;
+  }
+
+  const titulo_producto = document.getElementById("titulo_producto");
+  titulo_producto.innerText = producto.nombre;
+
+  const precio_producto = document.getElementById("precio_producto");
+  precio_producto.innerText = "USD $" + producto.precio;
+
+  const cuotas_total = producto.precio * 2.3;
+  const cuotas = cuotas_total / 12;
+  const precio_por_cuota = document.getElementById("precio_cuotas");
+  precio_por_cuota.innerText = cuotas.toFixed(2);
+
+  const precio_total_cuotas = document.getElementById("precio_total_cuotas");
+  precio_total_cuotas.innerText = cuotas_total.toFixed(2);
+
+  const descripcion_producto = document.getElementById("descripcion_producto");
+  descripcion_producto.innerText = producto.descripcion;
+}
+
+const viendo_producto = localStorage.getItem("producto");
+
+try {
+  let producto_page = realizarBusqueda(viendo_producto);
+  page_producto(producto_page[0]);
+} catch (error) {}
+
+// FIN PAGINA PRODUCTO
+
 //FUNCION -- BARRA DE BUSQUEDA
-function realizarBusqueda(termino) {
+export function realizarBusqueda(termino) {
   let resultadoBusqueda = [];
 
   Object.entries(productos).forEach(([clave, otro]) => {
@@ -224,7 +267,6 @@ if (producto_buscado === "mostrar_todo") {
     where_card.id = "producto_" + i;
     coincidencia_producto.appendChild(where_card);
     card_creator(mostrar[i], "producto_" + i);
-    console.log(typeof mostrar);
   }
 }
 

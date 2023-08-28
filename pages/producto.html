@@ -4,7 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <!-- Sweet alert-->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css"
+    />
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/toastify-js"
+    ></script>
     <link rel="stylesheet" href="../css/style.css" />
     <!-- Estilos -->
     <link rel="stylesheet" href="../css/variables.css" />
@@ -63,7 +71,73 @@
       <!-- Fin NAVEGACION -->
     </header>
     <!--  CONTENIDO -->
-    <main class="contenedor" id="producto_here"></main>
+    <main class="contenedor" id="producto_here">
+      <div class="creacion_producto">
+        <div class="producto_img">
+          <img id="imagen_producto" src="" alt="" />
+        </div>
+        <div class="producto_contenido">
+          <h1 id="titulo_producto">titulo producto</h1>
+          <div class="producto_contenido--final">
+            <p id="precio_producto" class="contenido_final--precio">33333</p>
+          </div>
+          <div class="cuotas_informacion">
+            <p class="cuotas_informacion--valor">
+              12 Cuotas de <precio id="precio_cuotas">4444</precio>
+              <span
+                >(PTF:
+                <precio id="precio_total_cuotas">$123.718</precio>)*</span
+              >
+            </p>
+            <p class="cuotas_informacion--tarjeta">
+              * Descuento con tarjetas <span>Visa</span> y <span>Master</span>
+            </p>
+          </div>
+          <div class="input-container">
+            <label for="cantidad">Cantidad</label>
+            <input
+              type="number"
+              id="cantidad"
+              value="1"
+              name="cantidad"
+              min="1"
+              max="999"
+            />
+            <button id="agregar_carrito" class="boton">
+              agregar al carrito
+            </button>
+          </div>
+        </div>
+        <div class="caracteristicas_producto">
+          <p id="descripcion_producto">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere,
+            odio quo! Deserunt vero nemo illum accusamus iusto aperiam eveniet.
+            Aperiam beatae reiciendis quod blanditiis numquam tempore pariatur
+            quo a perferendis!
+          </p>
+        </div>
+      </div>
+    </main>
+    <div class="contenido3 contenedor">
+      <div class="contenido3_header">
+        <h2>Te Puede Interesar</h2>
+      </div>
+      <!-- Fin HEADER -->
+      <div class="contenido3_card" id="contenido3_card">
+        <!-- PRODUCTO -->
+        <div id="recomendacion_1"></div>
+        <!-- Fin PRODUCTO CARD-->
+        <!-- PRODUCTO -->
+        <div id="recomendacion_2"></div>
+        <!-- Fin PRODUCTO CARD-->
+        <!-- PRODUCTO -->
+        <div id="recomendacion_4"></div>
+        <!-- Fin PRODUCTO CARD-->
+        <!-- PRODUCTO -->
+        <div id="recomendacion_3"></div>
+        <!-- Fin PRODUCTO CARD-->
+      </div>
+    </div>
     <!-- FIN CONTENIDO -->
     <div class="line-division contenedor"></div>
     <footer>
@@ -178,4 +252,5 @@
     </span>
   </body>
   <script type="module" src="../js/main.js"></script>
+  <script type="module" src="../js/carrito.js"></script>
 </html>
